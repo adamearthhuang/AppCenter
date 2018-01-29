@@ -1,0 +1,16 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/rmb/rmb",
+    "pages/hxw/hxw",
+    "pages/sw/sw",
+    "pages/tz/tz",
+    "pages/hb/hb"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#3A3B3E",
+    "navigationBarTitleText": "应用中心",
+    "navigationBarTextStyle":"white"
+  }
+}

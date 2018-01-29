@@ -1,0 +1,13 @@
+<view class="body" style="height:{{height}};">
+  <scroll-view scroll-y enable-back-to-top="true" scroll-with-animation="true">
+    <view class="placeholder"></view>
+
+    <view class="output-area">
+      <text selectable>【支付宝邀你瓜分10亿现金红包啦！红包天天都能领，周五周六及双十二期间最高可达1212元】红包可在实体门店付款时抵扣#吱口令#长按复制此消息，打开支付宝就能领取！5sY5wC85LJ</text>
+    </view>
+
+    <view class="tip-area">
+      <text>温馨提示：支付宝官方认证活动，红包当日有效，请及时消费使用，每天均可复制该口令登录支付宝领取红包。</text>
+    </view>
+  </scroll-view>
+</view>

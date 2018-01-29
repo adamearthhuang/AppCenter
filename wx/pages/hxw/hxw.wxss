@@ -1,0 +1,31 @@
+.input-area {
+  background-color: #FFFFFF;
+  padding: 10px 20px 10px 20px;
+}
+
+.input-area input {
+  font-size: 1.2rem;
+  width: 100%;
+}
+
+.divider-area {
+  background-color: #FFFFFF;
+}
+
+.hr {
+  border: none;
+  border-top: 1px solid  #F2F2F2;
+  margin: 0 20px;
+}
+
+.output-area {
+  background-color: #FFFFFF;
+  padding: 10px 20px 10px 20px;
+}
+
+.output-area text {
+  font-size: 1.2rem;
+  color: #02BD00;
+  line-height: 25px;
+  word-break: break-all;
+}

@@ -1,0 +1,21 @@
+<view class="body" style="height:{{height}};">
+  <scroll-view scroll-y enable-back-to-top="true" scroll-with-animation="true">
+    <view class="placeholder"></view>
+    
+    <view class="input-area">
+      <input type="number" placeholder="身高（厘米）" focus="true" bindinput="onInputListener" />
+    </view>
+
+    <view class="divider-area" hidden="{{hidden}}">
+      <view class="hr"></view>
+    </view>
+
+    <view class="output-area" hidden="{{hidden}}">
+      <text selectable>{{output}}</text>
+    </view>
+
+    <view class="tip-area">
+      <text>温馨提示：查询结果仅供参考，请务必进行多方验证。</text>
+    </view>
+  </scroll-view>
+</view>

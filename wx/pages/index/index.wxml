@@ -1,0 +1,61 @@
+<view class="body" style="height:{{height}};">
+  <scroll-view scroll-y enable-back-to-top="true" scroll-with-animation="true">
+   <view class="title-area">
+      <text>限时活动</text>
+    </view>
+    
+    <view class="table">
+      <view class="tr" style="height:{{trHeight}};"> 
+        <view class="td" hover-class="hover" bindtap='onHBClickListener'>
+          <image src="../../resource/index/hb.png"></image>
+          <text>红包</text> 
+        </view>
+
+        <view class="td" hover-class="hover">
+
+        </view>
+
+        <view class="td" hover-class="hover">
+
+        </view>
+      </view>
+    </view>
+
+    <view class="title-area">
+      <text>便民生活</text>
+    </view>
+    
+    <view class="table">
+      <view class="tr" style="height:{{trHeight}};"> 
+        <view class="td" hover-class="hover" bindtap='onRMBClickListener'>
+          <image src="../../resource/index/rmb.png"></image>
+          <text>人民币大写</text> 
+        </view>
+
+        <view class="td" hover-class="hover" bindtap='onHXWClickListener'>
+          <image src="../../resource/index/hxw.png"></image>
+          <text>非主流火星文</text> 
+        </view>
+
+        <view class="td" hover-class="hover" bindtap='onSWClickListener'>
+          <image src="../../resource/index/sw.png"></image>
+          <text>女性标准三围</text> 
+        </view>
+      </view>
+
+      <view class="tr" style="height:{{trHeight}};">
+        <view class="td" hover-class="hover" bindtap='onTZClickListener'>
+          <image src="../../resource/index/tz.png"></image>
+          <text>标准体重</text> 
+        </view>
+
+        <view class="td" hover-class="hover">
+        </view>
+        
+        <view class="td" hover-class="hover">
+        </view>
+      </view>
+    </view>
+  </scroll-view>
+</view>
+
