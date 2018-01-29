@@ -1,0 +1,58 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Microsoft YaHei", 微软雅黑, "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+body {
+    background-color: #EEEFF3;
+}
+
+div.placeholder {
+    height: 20px;
+}
+
+div.input-area {
+    background-color: #FFFFFF;
+    padding: 10px 20px 10px 20px;
+}
+
+div.input-area input {
+    font-size: 1.2rem;
+    box-shadow: none;
+    outline: none;
+    border: none;
+    width: 100%;
+    ime-mode:disabled;
+}
+
+div.divider {
+    background-color: #FFFFFF;
+}
+
+div.divider hr {
+    border: none;
+    border-top: 1px solid  #F2F2F2;
+    margin: 0 20px;
+    display: none;
+}
+
+div.output-area {
+    background-color: #FFFFFF;
+    padding: 10px 20px 10px 20px;
+    display: none;
+}
+
+div.output-area p {
+    font-size: 1rem;
+    color: #02BD00;
+    line-height: 25px;
+}
+
+p.tip {
+    padding: 10px 20px 10px 20px;
+    color: #868686;
+    word-break: break-all;
+    line-height: 25px;
+    font-size: 0.8rem;
+}
