@@ -1,21 +1,22 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>非主流火星文</title>
-        
+        <title>人民币大写</title>
+
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
-        <link rel="stylesheet" href="../css/hxw.css" />
+        <link rel="stylesheet" href="./stylesheets/rmb.css" />
     </head>
 
     <body>
         <!-- 占位符 -->
         <div class="placeholder"></div>
-
+        
         <!-- 输入框 -->
         <div class="input-area">
-            <input id="input" type="text" placeholder="還誋嘚噹哖非註蓅の洎巳嗎？">
+            <p>¥</p>
+            <input id="input" type="text" placeholder="0.00">
         </div>
 
         <!-- 分割线 -->
@@ -28,7 +29,10 @@
             <p id="output"></p>
         </div>
 
-        <script type="text/javascript" src="../../lib/jquery/jquery.min.js" ></script>
-        <script type="text/javascript" src="../../js/hxw.js" ></script>
+        <!-- 温馨提示 -->
+        <p class="tip">温馨提示：转换结果仅供参考，请务必进行多方验证。</p>
+
+        <script type="text/javascript" src="./lib/jquery/jquery.min.js" ></script>
+        <script type="text/javascript" src="./javascripts/rmb.js" ></script>
     </body>
 </html>

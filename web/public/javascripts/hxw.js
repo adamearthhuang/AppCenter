@@ -1,7 +1,3 @@
-/**
- * Created by APEXISM on 2016/11/8.
- */
-
 $(function() {
 
     $('#input').focus();

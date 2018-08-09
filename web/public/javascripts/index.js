@@ -1,6 +1,3 @@
-/**
- * Created by APEXISM on 2016/10/23.
- */
 $(function() {
 
     $('tr').css('height', $('td').width());
