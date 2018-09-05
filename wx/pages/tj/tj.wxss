@@ -1,0 +1,7 @@
+.output-area {
+  padding: 0px 20px 0px 20px;
+}
+
+.output-area .marginTop {
+  margin-top: 10px;
+}

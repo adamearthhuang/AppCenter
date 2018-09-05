@@ -1,14 +1,14 @@
 <view class="body" style="height:{{height}};">
   <scroll-view scroll-y enable-back-to-top="true" scroll-with-animation="true">
    <view class="title-area">
-      <text>限时活动</text>
+      <text>限时推广</text>
     </view>
     
     <view class="table">
       <view class="tr" style="height:{{trHeight}};"> 
-        <view class="td" hover-class="hover" bindtap='onHBClickListener'>
-          <image src="../../resource/index/hb.png"></image>
-          <text>红包</text> 
+        <view class="td" hover-class="hover" bindtap='onTJClickListener'>
+          <image src="../../resource/index/tj.png"></image>
+          <text>今日推荐</text> 
         </view>
 
         <view class="td" hover-class="hover">

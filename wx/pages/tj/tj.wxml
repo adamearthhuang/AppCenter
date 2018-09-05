@@ -1,0 +1,15 @@
+<view class="body" style="height:{{height}};">
+  <scroll-view scroll-y enable-back-to-top="true" scroll-with-animation="true">
+    <view class="placeholder"></view>
+
+    <view class="output-area">
+      <ad unit-id="adunit-e11df4353c50e45f"></ad>
+      <ad unit-id="adunit-6557a7361b171e90" class="marginTop" ></ad>
+      <ad unit-id="adunit-ce153d7708bfb15a" class="marginTop" ></ad>
+    </view>
+
+    <view class="tip-area">
+      <text>温馨提示：根据你的用户画像，提供最适合你的推荐。</text>
+    </view>
+  </scroll-view>
+</view>

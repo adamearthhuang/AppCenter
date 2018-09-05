@@ -35,9 +35,9 @@ Page({
       url: '../tz/tz'
     });
   },
-  onHBClickListener: function () {
+  onTJClickListener: function () {
     wx.navigateTo({
-      url: '../hb/hb'
+      url: '../tj/tj'
     });
   }
 });

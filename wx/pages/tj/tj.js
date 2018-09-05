@@ -10,8 +10,8 @@ Page({
   },
   onShareAppMessage: function () {
     return {
-      title: '红包',
-      path: '/pages/hb/hb'
+      title: '今日推荐',
+      path: '/pages/tj/tj'
     };
   }
 });
