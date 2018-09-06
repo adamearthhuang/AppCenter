@@ -4,8 +4,6 @@
 
     <view class="output-area">
       <ad unit-id="adunit-e11df4353c50e45f"></ad>
-      <ad unit-id="adunit-6557a7361b171e90" class="marginTop" ></ad>
-      <ad unit-id="adunit-ce153d7708bfb15a" class="marginTop" ></ad>
     </view>
 
     <view class="tip-area">
