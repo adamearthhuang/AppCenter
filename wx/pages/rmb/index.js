@@ -9,7 +9,7 @@ Page({
   onShareAppMessage: function () {
     return {
       title: '人民币大写',
-      path: '/pages/rmb/rmb'
+      path: '/pages/rmb/index'
     };
   },
   onInputListener: function (data) {

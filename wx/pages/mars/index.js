@@ -9,7 +9,7 @@ Page({
   onShareAppMessage: function () {
     return {
       title: '非主流火星文',
-      path: '/pages/mars/mars'
+      path: '/pages/mars/index'
     };
   },
   onInputListener: function (data) {

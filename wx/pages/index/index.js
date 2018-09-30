@@ -8,7 +8,7 @@ Page({
         grids: [
           {
             title: '今日推荐',
-            url: '../advertisement/advertisement',
+            url: '../advertisement/index',
             img: '../../resource/index/advertisement.png'
           },
           { },
@@ -20,22 +20,22 @@ Page({
         grids: [
           {
             title: '人民币大写',
-            url: '../rmb/rmb',
+            url: '../rmb/index',
             img: '../../resource/index/rmb.png'
           },
           {
             title: '非主流火星文',
-            url: '../mars/mars',
+            url: '../mars/index',
             img: '../../resource/index/mars.png'
           },
           {
             title: '女性标准三围',
-            url: '../measurement/measurement',
+            url: '../measurement/index',
             img: '../../resource/index/measurement.png'
           },
           {
             title: '标准体重',
-            url: '../weight/weight',
+            url: '../weight/index',
             img: '../../resource/index/weight.png'
           },
           { },

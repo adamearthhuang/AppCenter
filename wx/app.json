@@ -1,11 +1,11 @@
 {
   "pages":[
     "pages/index/index",
-    "pages/rmb/rmb",
-    "pages/mars/mars",
-    "pages/measurement/measurement",
-    "pages/weight/weight",
-    "pages/advertisement/advertisement"
+    "pages/rmb/index",
+    "pages/mars/index",
+    "pages/measurement/index",
+    "pages/weight/index",
+    "pages/advertisement/index"
   ],
   "window":{
     "backgroundTextStyle":"light",

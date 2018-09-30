@@ -11,7 +11,7 @@ Page({
   onShareAppMessage: function () {
     return {
       title: '女性标准三围',
-      path: '/pages/measurement/measurement'
+      path: '/pages/measurement/index'
     };
   },
   onInputListener: function (data) {

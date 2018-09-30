@@ -7,7 +7,7 @@ Page({
   onShareAppMessage: function () {
     return {
       title: '今日推荐',
-      path: '/pages/advertisement/advertisement'
+      path: '/pages/advertisement/index'
     };
   }
 });
