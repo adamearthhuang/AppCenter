@@ -1,54 +1,70 @@
-.input-area {
+page {
+  background-color: #EEEFF3;
+}
+
+.placeholder {
+  height: 20px;
+}
+
+.input {
   background-color: #FFFFFF;
   padding: 10px 20px 10px 20px;
 }
 
-.input-area input {
+.input input {
   font-size: 1.2rem;
   width: 100%;
 }
 
-.select-area {
+.select {
   background-color: #FFFFFF;
 }
 
-.select-area .text {
+.select .text {
   font-size: 1.2rem;
   width: 100%;
   padding: 7px 20px 10px 20px;
 }
 
-.select-area .ul {
+.select .ul {
   position: absolute;
   background-color: #FFFFFF;
   width: 100%;
   box-shadow: 0 3px 5px #A9A9A9;
 }
 
-.select-area .ul .li {
+.select .ul .li {
   padding: 10px 20px 10px 20px;
   font-size: 1.1rem;
   color: #A9A9A9;
 }
 
-.divider-area {
+.divider {
   background-color: #FFFFFF;
 }
 
-.hr {
+.divider .hr {
   border: none;
   border-top: 1px solid  #F2F2F2;
   margin: 0 20px;
 }
 
-.output-area {
+.output {
   background-color: #FFFFFF;
   padding: 10px 20px 10px 20px;
 }
 
-.output-area text {
+.output text {
   font-size: 1rem;
   color: #02BD00;
   line-height: 25px;
   word-break: break-all;
+}
+
+.tip {
+  padding: 10px 20px 10px 20px;
+  color: #868686;
+  word-break: break-all;
+  line-height: 25px;
+  font-size: 0.8rem;
 }

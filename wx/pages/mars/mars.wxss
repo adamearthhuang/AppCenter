@@ -1,29 +1,37 @@
-.input-area {
+page {
+  background-color: #EEEFF3;
+}
+
+.placeholder {
+  height: 20px;
+}
+
+.input {
   background-color: #FFFFFF;
   padding: 10px 20px 10px 20px;
 }
 
-.input-area input {
+.input input {
   font-size: 1.2rem;
   width: 100%;
 }
 
-.divider-area {
+.divider {
   background-color: #FFFFFF;
 }
 
-.hr {
+.divider .hr {
   border: none;
   border-top: 1px solid  #F2F2F2;
   margin: 0 20px;
 }
 
-.output-area {
+.output {
   background-color: #FFFFFF;
   padding: 10px 20px 10px 20px;
 }
 
-.output-area text {
+.output text {
   font-size: 1.2rem;
   color: #02BD00;
   line-height: 25px;

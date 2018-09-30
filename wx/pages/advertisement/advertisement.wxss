@@ -1,0 +1,19 @@
+page {
+  background-color: #EEEFF3;
+}
+
+.placeholder {
+  height: 20px;
+}
+
+.ad {
+  padding: 0px 20px 0px 20px;
+}
+
+.tip {
+  padding: 10px 20px 10px 20px;
+  color: #868686;
+  word-break: break-all;
+  line-height: 25px;
+  font-size: 0.8rem;
+}

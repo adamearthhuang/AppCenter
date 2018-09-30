@@ -2,9 +2,7 @@ var util = require('../../utils/util');
 
 Page({
   onLoad: function () {
-    var height = util.getScreenHeight();
     this.setData({
-      height: height + 'px',
       hidden: true
     });
   },

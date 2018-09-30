@@ -2,16 +2,14 @@ var util = require('../../utils/util');
 
 Page({
   onLoad: function () {
-    var height = util.getScreenHeight();
     this.setData({
-      height: height + 'px',
       hidden: true
     });
   },
   onShareAppMessage: function () {
     return {
       title: '非主流火星文',
-      path: '/pages/hxw/hxw'
+      path: '/pages/mars/mars'
     };
   },
   onInputListener: function (data) {

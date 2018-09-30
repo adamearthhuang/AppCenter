@@ -1,61 +1,15 @@
-<view class="body" style="height:{{height}};">
-  <scroll-view scroll-y enable-back-to-top="true" scroll-with-animation="true">
-   <view class="title-area">
-      <text>限时推广</text>
-    </view>
-    
-    <view class="table">
-      <view class="tr" style="height:{{trHeight}};"> 
-        <view class="td" hover-class="hover" bindtap='onTJClickListener'>
-          <image src="../../resource/index/tj.png"></image>
-          <text>今日推荐</text> 
-        </view>
-
-        <view class="td" hover-class="hover">
-
-        </view>
-
-        <view class="td" hover-class="hover">
-
-        </view>
-      </view>
+<view>
+  <view wx:for="{{ items }}" wx:for-item="item" wx:key="item">
+    <view class="title">
+      <text>{{ item.title }}</text>
     </view>
 
-    <view class="title-area">
-      <text>便民生活</text>
+    <view class="grid-flex">
+      <navigator wx:for="{{ item.grids }}" wx:for-item="grid" wx:key="grid" url="{{ grid.url }}" class="grid" style="height:{{ gridHeight }};">
+        <image src="{{ grid.img }}"></image>
+        <text>{{ grid.title }}</text> 
+      </navigator>
     </view>
-    
-    <view class="table">
-      <view class="tr" style="height:{{trHeight}};"> 
-        <view class="td" hover-class="hover" bindtap='onRMBClickListener'>
-          <image src="../../resource/index/rmb.png"></image>
-          <text>人民币大写</text> 
-        </view>
-
-        <view class="td" hover-class="hover" bindtap='onHXWClickListener'>
-          <image src="../../resource/index/hxw.png"></image>
-          <text>非主流火星文</text> 
-        </view>
-
-        <view class="td" hover-class="hover" bindtap='onSWClickListener'>
-          <image src="../../resource/index/sw.png"></image>
-          <text>女性标准三围</text> 
-        </view>
-      </view>
-
-      <view class="tr" style="height:{{trHeight}};">
-        <view class="td" hover-class="hover" bindtap='onTZClickListener'>
-          <image src="../../resource/index/tz.png"></image>
-          <text>标准体重</text> 
-        </view>
-
-        <view class="td" hover-class="hover">
-        </view>
-        
-        <view class="td" hover-class="hover">
-        </view>
-      </view>
-    </view>
-  </scroll-view>
+  </view>
 </view>
 

@@ -1,0 +1,41 @@
+<view>
+  <view class="placeholder"></view>
+  
+  <view class="input">
+    <input type="number" placeholder="身高（厘米）"  focus="true" bindinput="onHeightInputListener" />
+  </view>
+
+  <view class="divider">
+    <view class="hr"></view>
+  </view>
+
+  <view class="input">
+    <input type="number" placeholder="体重（公斤）" bindinput="onWeightInputListener" />
+  </view>
+
+  <view class="divider">
+    <view class="hr"></view>
+  </view>
+
+  <view class="select">
+    <view class="text" bindtap="onSexClickListener">{{sex}}</view>
+    <view class="hr" hidden="{{ selectHidden }}"></view>
+    <view class="ul" hidden="{{ selectHidden }}">
+      <view class="li" hover-class="hover" bindtap="onManClickListener">男</view>
+      <view class="hr"></view>
+      <view class="li" hover-class="hover" bindtap="onWomanClickListener">女</view>
+    </view>
+  </view>
+
+  <view class="divider" hidden="{{ outputHidden }}">
+    <view class="hr"></view>
+  </view>
+
+  <view class="output" hidden="{{ outputHidden }}">
+    <text selectable>{{ output }}</text>
+  </view>
+
+  <view class="tip">
+    <text>温馨提示：查询结果仅供参考，请务必进行多方验证。</text>
+  </view>
+</view>

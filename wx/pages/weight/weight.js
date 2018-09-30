@@ -4,9 +4,7 @@ var height = '', weight = '';
 
 Page({
   onLoad: function () {
-    var height = util.getScreenHeight();
     this.setData({
-      height: height + 'px',
       sex: '男',
       selectHidden: true,
       outputHidden: true
@@ -15,7 +13,7 @@ Page({
   onShareAppMessage: function () {
     return {
       title: '标准体重',
-      path: '/pages/tz/tz'
+      path: '/pages/weight/weight'
     };
   },
   onHeightInputListener: function (data) {

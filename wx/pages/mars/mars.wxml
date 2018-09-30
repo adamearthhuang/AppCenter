@@ -1,0 +1,15 @@
+<view>
+  <view class="placeholder"></view>
+    
+  <view class="input">
+    <input type="text" placeholder="還誋嘚噹哖非註蓅の洎巳嗎？" focus="true" bindinput="onInputListener" />
+  </view>
+
+  <view class="divider" hidden="{{ hidden }}">
+    <view class="hr"></view>
+  </view>
+
+  <view class="output" hidden="{{ hidden }}">
+    <text selectable>{{ output }}</text>
+  </view>
+</view>

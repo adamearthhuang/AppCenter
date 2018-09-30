@@ -2,10 +2,10 @@
   "pages":[
     "pages/index/index",
     "pages/rmb/rmb",
-    "pages/hxw/hxw",
-    "pages/sw/sw",
-    "pages/tz/tz",
-    "pages/tj/tj"
+    "pages/mars/mars",
+    "pages/measurement/measurement",
+    "pages/weight/weight",
+    "pages/advertisement/advertisement"
   ],
   "window":{
     "backgroundTextStyle":"light",

@@ -1,12 +1,52 @@
 var util = require('../../utils/util');
 
 Page({
+  data: {
+    items: [
+      {
+        title: '限时推广',
+        grids: [
+          {
+            title: '今日推荐',
+            url: '../advertisement/advertisement',
+            img: '../../resource/index/advertisement.png'
+          },
+          { },
+          { }
+        ]
+      },
+      {
+        title: '便民生活',
+        grids: [
+          {
+            title: '人民币大写',
+            url: '../rmb/rmb',
+            img: '../../resource/index/rmb.png'
+          },
+          {
+            title: '非主流火星文',
+            url: '../mars/mars',
+            img: '../../resource/index/mars.png'
+          },
+          {
+            title: '女性标准三围',
+            url: '../measurement/measurement',
+            img: '../../resource/index/measurement.png'
+          },
+          {
+            title: '标准体重',
+            url: '../weight/weight',
+            img: '../../resource/index/weight.png'
+          },
+          { },
+          { },
+        ]
+      }
+    ],
+  },
   onLoad: function () {
-    var height = util.getScreenHeight();
-    var trHeight = util.getScreenWidth() / 3;
     this.setData({
-      height: height + 'px',
-      trHeight: trHeight + 'px'
+      gridHeight: util.getScreenWidth() / 3 + 'px'
     });
   },
   onShareAppMessage: function () {
@@ -14,30 +54,5 @@ Page({
       title: '应用中心',
       path: '/pages/index/index'
     };
-  },
-  onRMBClickListener: function () {
-    wx.navigateTo({
-      url: '../rmb/rmb'
-    });
-  },
-  onHXWClickListener: function () {
-    wx.navigateTo({
-      url: '../hxw/hxw'
-    });
-  },
-  onSWClickListener: function () {
-    wx.navigateTo({
-      url: '../sw/sw'
-    });
-  },
-  onTZClickListener: function () {
-    wx.navigateTo({
-      url: '../tz/tz'
-    });
-  },
-  onTJClickListener: function () {
-    wx.navigateTo({
-      url: '../tj/tj'
-    });
   }
 });
