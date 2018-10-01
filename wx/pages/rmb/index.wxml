@@ -2,7 +2,6 @@
   <view class="placeholder"></view>
 
   <view class="input">
-    <text>￥</text>
     <input type="digit" placeholder="0.00" focus="true" bindinput="onInputListener" />
   </view>
 
@@ -11,7 +10,7 @@
   </view>
 
   <view class="output" hidden="{{ hidden }}">
-    <text selectable>{{ output }}</text>
+    <text data-entry="{{ output }}" bindtap="onOutputListener">{{ output }}</text>
   </view>
 
   <view class="tip">

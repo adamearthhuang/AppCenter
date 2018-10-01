@@ -2,9 +2,7 @@ var util = require('../../utils/util');
 
 Page({
   onLoad: function () {
-    var height = util.getScreenHeight();
     this.setData({
-      height: height + 'px',
       hidden: true
     });
   },
@@ -26,6 +24,16 @@ Page({
         output: convert(data.detail.value)
       });
     }
+  },
+  onOutputListener: function (data) {
+    wx.setClipboardData({
+      data: data.target.dataset.entry,
+      success: function () {
+        wx.showToast({ 
+          title: '复制成功' 
+        });
+      }
+    });
   }
 });
 

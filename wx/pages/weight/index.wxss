@@ -18,25 +18,12 @@ page {
 
 .select {
   background-color: #FFFFFF;
+  padding: 10px 20px 10px 20px;
 }
 
-.select .text {
+.select picker {
   font-size: 1.2rem;
   width: 100%;
-  padding: 7px 20px 10px 20px;
-}
-
-.select .ul {
-  position: absolute;
-  background-color: #FFFFFF;
-  width: 100%;
-  box-shadow: 0 3px 5px #A9A9A9;
-}
-
-.select .ul .li {
-  padding: 10px 20px 10px 20px;
-  font-size: 1.1rem;
-  color: #A9A9A9;
 }
 
 .divider {

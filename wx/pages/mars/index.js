@@ -24,6 +24,16 @@ Page({
         output: convert(data.detail.value)
       });
     }
+  },
+  onOutputListener: function (data) {
+    wx.setClipboardData({
+      data: data.target.dataset.entry,
+      success: function () {
+        wx.showToast({ 
+          title: '复制成功' 
+        });
+      }
+    });
   }
 });
 

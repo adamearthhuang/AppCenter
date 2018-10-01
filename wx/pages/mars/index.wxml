@@ -10,6 +10,6 @@
   </view>
 
   <view class="output" hidden="{{ hidden }}">
-    <text selectable>{{ output }}</text>
+    <text data-entry="{{ output }}" bindtap="onOutputListener">{{ output }}</text>
   </view>
 </view>

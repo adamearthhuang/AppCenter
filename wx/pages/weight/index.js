@@ -6,7 +6,8 @@ Page({
   onLoad: function () {
     this.setData({
       sex: '男',
-      selectHidden: true,
+      sexArray: ['男', '女'],
+      sexIndex: 0,
       outputHidden: true
     });
   },
@@ -46,40 +47,27 @@ Page({
       });
     }
   },
-  onSexClickListener: function () {
-    if (this.data.selectHidden == true) {
-      this.setData({
-        selectHidden: false
-      });
-    } else {
-      this.setData({
-        selectHidden: true
-      });
-    }
-  },
-  onManClickListener: function () {
+  onSexSelectListener: function (data) {
     this.setData({
-      sex: '男',
-      selectHidden: true
+      sexIndex: data.detail.value,
+      sex: this.data.sexArray[data.detail.value]
     });
-
+    
     if (height.length > 0 && weight.length > 0) {
       this.setData({
         output: convert(weight, height, this.data.sex)
       });
     }
   },
-  onWomanClickListener: function () {
-    this.setData({
-      sex: '女',
-      selectHidden: true
+  onOutputListener: function (data) {
+    wx.setClipboardData({
+      data: data.target.dataset.entry,
+      success: function () {
+        wx.showToast({ 
+          title: '复制成功' 
+        });
+      }
     });
-
-    if (height.length > 0 && weight.length > 0) {
-      this.setData({
-        output: convert(weight, height, this.data.sex)
-      });
-    }
   }
 });
 

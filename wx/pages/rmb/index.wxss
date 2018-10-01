@@ -8,14 +8,7 @@ page {
 
 .input {
   background-color: #FFFFFF;
-  padding: 10px 20px 10px 40px;
-}
-
-.input text {
-  position: absolute;
-  left: 17px;
-  font-size: 1.2rem;
-  margin-top: -3px;
+  padding: 10px 20px 10px 20px;
 }
 
 .input input {

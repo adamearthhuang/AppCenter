@@ -18,13 +18,7 @@
   </view>
 
   <view class="select">
-    <view class="text" bindtap="onSexClickListener">{{sex}}</view>
-    <view class="hr" hidden="{{ selectHidden }}"></view>
-    <view class="ul" hidden="{{ selectHidden }}">
-      <view class="li" hover-class="hover" bindtap="onManClickListener">男</view>
-      <view class="hr"></view>
-      <view class="li" hover-class="hover" bindtap="onWomanClickListener">女</view>
-    </view>
+    <picker bindchange="onSexSelectListener" value="{{ sexIndex }}" range="{{ sexArray }}">{{ sexArray[sexIndex] }}</picker>
   </view>
 
   <view class="divider" hidden="{{ outputHidden }}">
@@ -32,7 +26,7 @@
   </view>
 
   <view class="output" hidden="{{ outputHidden }}">
-    <text selectable>{{ output }}</text>
+    <text data-entry="{{ output }}" bindtap="onOutputListener">{{ output }}</text>
   </view>
 
   <view class="tip">
