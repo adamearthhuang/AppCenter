@@ -24,21 +24,26 @@ Page({
             img: '../../resource/index/rmb.png'
           },
           {
+            title: '安全扫码',
+            url: '../qrcode/index',
+            img: '../../resource/index/qrcode.png'
+          },
+          {
             title: '非主流火星文',
             url: '../mars/index',
             img: '../../resource/index/mars.png'
-          },
-          {
-            title: '女性标准三围',
-            url: '../measurement/index',
-            img: '../../resource/index/measurement.png'
           },
           {
             title: '标准体重',
             url: '../weight/index',
             img: '../../resource/index/weight.png'
           },
-          { },
+          {
+            title: '女性标准三围',
+            url: '../measurement/index',
+            img: '../../resource/index/measurement.png'
+          },
+          
           { },
         ]
       }

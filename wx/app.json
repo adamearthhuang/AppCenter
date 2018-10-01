@@ -5,7 +5,8 @@
     "pages/mars/index",
     "pages/measurement/index",
     "pages/weight/index",
-    "pages/advertisement/index"
+    "pages/advertisement/index",
+    "pages/qrcode/index"
   ],
   "window":{
     "backgroundTextStyle":"light",

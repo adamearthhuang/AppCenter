@@ -30,7 +30,8 @@ Page({
       data: data.target.dataset.entry,
       success: function () {
         wx.showToast({ 
-          title: '复制成功' 
+          title: '复制成功',
+          icon: 'success' 
         });
       }
     });

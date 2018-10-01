@@ -1,0 +1,11 @@
+<view>
+  <view class="placeholder"></view>
+  
+  <view class="output" hidden="{{ hidden }}">
+    <text data-entry="{{ output }}" bindtap="onOutputListener">{{ output }}</text>
+  </view>
+
+  <view class="tip">
+    <text>温馨提示：安全扫描被屏蔽的二维码/条码信息。</text>
+  </view>
+</view>
