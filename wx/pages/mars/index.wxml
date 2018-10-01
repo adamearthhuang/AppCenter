@@ -9,7 +9,7 @@
     <view class="hr"></view>
   </view>
 
-  <view class="output" hidden="{{ hidden }}">
-    <text data-entry="{{ output }}" bindtap="onOutputListener">{{ output }}</text>
+  <view class="output" hidden="{{ hidden }}" bindtap="onOutputListener">
+    <text>{{ output }}</text>
   </view>
 </view>

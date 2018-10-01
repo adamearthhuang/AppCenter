@@ -21,12 +21,12 @@
     <picker bindchange="onSexSelectListener" value="{{ sexIndex }}" range="{{ sexArray }}">{{ sexArray[sexIndex] }}</picker>
   </view>
 
-  <view class="divider" hidden="{{ outputHidden }}">
+  <view class="divider" hidden="{{ hidden }}">
     <view class="hr"></view>
   </view>
 
-  <view class="output" hidden="{{ outputHidden }}">
-    <text data-entry="{{ output }}" bindtap="onOutputListener">{{ output }}</text>
+  <view class="output" hidden="{{ hidden }}" bindtap="onOutputListener">
+    <text>{{ output }}</text>
   </view>
 
   <view class="tip">

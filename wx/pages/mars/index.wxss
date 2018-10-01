@@ -12,8 +12,7 @@ page {
 }
 
 .input input {
-  font-size: 1.2rem;
-  width: 100%;
+  font-size: 1rem;
 }
 
 .divider {
@@ -32,8 +31,7 @@ page {
 }
 
 .output text {
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: #02BD00;
-  line-height: 25px;
   word-break: break-all;
 }

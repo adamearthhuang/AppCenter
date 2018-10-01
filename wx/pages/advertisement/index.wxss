@@ -13,7 +13,6 @@ page {
 .tip {
   padding: 10px 20px 10px 20px;
   color: #868686;
-  word-break: break-all;
-  line-height: 25px;
   font-size: 0.8rem;
+  word-break: break-all;
 }

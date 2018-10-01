@@ -36,9 +36,9 @@ Page({
       path: '/pages/qrcode/index'
     };
   },
-  onOutputListener: function (data) {
+  onOutputListener: function () {
     wx.setClipboardData({
-      data: data.target.dataset.entry,
+      data: this.data.output,
       success: function () {
         wx.showToast({
           title: '复制成功',

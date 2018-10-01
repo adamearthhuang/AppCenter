@@ -8,7 +8,7 @@ Page({
       sex: '男',
       sexArray: ['男', '女'],
       sexIndex: 0,
-      outputHidden: true
+      hidden: true
     });
   },
   onShareAppMessage: function () {
@@ -22,12 +22,12 @@ Page({
 
     if (height.length == 0) {
       this.setData({
-        outputHidden: true
+        hidden: true
       });
 
     } else if (weight.length > 0) {
       this.setData({
-        outputHidden: false,
+        hidden: false,
         output: convert(weight, height, this.data.sex)
       });
     }
@@ -37,12 +37,12 @@ Page({
 
     if (weight.length == 0) {
       this.setData({
-        outputHidden: true
+        hidden: true
       });
 
     } else if (height.length > 0) {
       this.setData({
-        outputHidden: false,
+        hidden: false,
         output: convert(weight, height, this.data.sex)
       });
     }
@@ -59,9 +59,9 @@ Page({
       });
     }
   },
-  onOutputListener: function (data) {
+  onOutputListener: function () {
     wx.setClipboardData({
-      data: data.target.dataset.entry,
+      data: this.data.output,
       success: function () {
         wx.showToast({ 
           title: '复制成功',
