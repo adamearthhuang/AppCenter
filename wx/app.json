@@ -6,7 +6,8 @@
     "pages/measurement/index",
     "pages/weight/index",
     "pages/advertisement/index",
-    "pages/qrcode/index"
+    "pages/qrcode/index",
+    "pages/kinsfolk/index"
   ],
   "window":{
     "backgroundTextStyle":"light",

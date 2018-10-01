@@ -1,0 +1,27 @@
+page {
+  background-color: #EEEFF3;
+  font-size: 1rem;
+}
+
+.grid-flex {
+  display: flex;
+  flex-wrap: wrap;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.grid-flex .grid {
+  width: 33.333333%;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  border: 0.5px solid #F2F2F2;
+  background-color: #FFF;
+}
+
+.grid-flex .hover {
+  background-color: #FAFAFB;
+}

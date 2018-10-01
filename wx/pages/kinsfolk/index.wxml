@@ -1,0 +1,16 @@
+<view>
+  <view class="grid-flex">
+    <view class="grid" hover-class="hover">父</view>
+    <view class="grid" hover-class="hover">母</view>
+    <view class="grid" hover-class="hover">兄</view>
+    <view class="grid" hover-class="hover">姐</view>
+    <view class="grid" hover-class="hover">弟</view>
+    <view class="grid" hover-class="hover">妹</view>
+    <view class="grid" hover-class="hover">子</view>
+    <view class="grid" hover-class="hover">女</view>
+    <view class="grid" hover-class="hover">夫</view>
+    <view class="grid" hover-class="hover"><picker mode="multiSelector" bindchange="onMultiSelectListener" value="{{ multiIndex }}" range="{{ multiArray }}">选项</picker></view>
+    <view class="grid" hover-class="hover">妻</view>
+    <view class="grid" hover-class="hover">清空</view>
+  </view>
+</view>

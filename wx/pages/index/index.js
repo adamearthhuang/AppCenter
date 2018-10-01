@@ -9,10 +9,10 @@ Page({
           {
             title: '今日推荐',
             url: '../advertisement/index',
-            img: '../../resource/index/advertisement.png'
+            icon: '../../resource/index/advertisement.png'
           },
           { },
-          { }
+          { },
         ]
       },
       {
@@ -21,30 +21,33 @@ Page({
           {
             title: '人民币大写',
             url: '../rmb/index',
-            img: '../../resource/index/rmb.png'
+            icon: '../../resource/index/rmb.png'
           },
           {
             title: '安全扫码',
             url: '../qrcode/index',
-            img: '../../resource/index/qrcode.png'
+            icon: '../../resource/index/qrcode.png'
           },
           {
             title: '非主流火星文',
             url: '../mars/index',
-            img: '../../resource/index/mars.png'
+            icon: '../../resource/index/mars.png'
           },
           {
             title: '标准体重',
             url: '../weight/index',
-            img: '../../resource/index/weight.png'
+            icon: '../../resource/index/weight.png'
+          },
+          {
+            title: '亲戚关系',
+            url: '../kinsfolk/index',
+            icon: '../../resource/index/kinsfolk.png'
           },
           {
             title: '女性标准三围',
             url: '../measurement/index',
-            img: '../../resource/index/measurement.png'
+            icon: '../../resource/index/measurement.png'
           },
-          
-          { },
         ]
       }
     ],
