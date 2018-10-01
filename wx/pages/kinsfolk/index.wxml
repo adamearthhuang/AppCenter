@@ -1,16 +1,31 @@
 <view>
+  <view class="placeholder"></view>
+
+  <view class="input">
+    <text>{{ input }}</text>
+  </view>
+
+  <view class="divider">
+    <view class="hr"></view>
+  </view>
+
+  <view class="output">
+    <text class="title">{{ multiArray[0][multiIndex[0]] }}，{{ multiArray[1][multiIndex[1]] }}：</text>
+    <text class="content">{{ output }}</text>
+  </view>
+
   <view class="grid-flex">
-    <view class="grid" hover-class="hover">父</view>
-    <view class="grid" hover-class="hover">母</view>
-    <view class="grid" hover-class="hover">兄</view>
-    <view class="grid" hover-class="hover">姐</view>
-    <view class="grid" hover-class="hover">弟</view>
-    <view class="grid" hover-class="hover">妹</view>
-    <view class="grid" hover-class="hover">子</view>
-    <view class="grid" hover-class="hover">女</view>
-    <view class="grid" hover-class="hover">夫</view>
-    <view class="grid" hover-class="hover"><picker mode="multiSelector" bindchange="onMultiSelectListener" value="{{ multiIndex }}" range="{{ multiArray }}">选项</picker></view>
-    <view class="grid" hover-class="hover">妻</view>
-    <view class="grid" hover-class="hover">清空</view>
+    <view class="grid" hover-class="hover" data-value="爸爸" bindtap="onGridListener">爸爸</view>
+    <view class="grid" hover-class="hover" data-value="妈妈" bindtap="onGridListener">妈妈</view>
+    <view class="grid" hover-class="hover" data-value="哥哥" bindtap="onGridListener">哥哥</view>
+    <view class="grid" hover-class="hover" data-value="姐姐" bindtap="onGridListener">姐姐</view>
+    <view class="grid" hover-class="hover" data-value="弟弟" bindtap="onGridListener">弟弟</view>
+    <view class="grid" hover-class="hover" data-value="妹妹" bindtap="onGridListener">妹妹</view>
+    <view class="grid" hover-class="hover" data-value="儿子" bindtap="onGridListener">儿子</view>
+    <view class="grid" hover-class="hover" data-value="女儿" bindtap="onGridListener">女儿</view>
+    <view class="grid" hover-class="hover" data-value="老公" bindtap="onGridListener">老公</view>
+    <view class="grid2" hover-class="hover2"><picker mode="multiSelector" bindchange="onMultiSelectListener" value="{{ multiIndex }}" range="{{ multiArray }}">选项</picker></view>
+    <view class="grid" hover-class="hover" data-value="老婆" bindtap="onGridListener">老婆</view>
+    <view class="grid2" hover-class="hover2" bindtap="onClearListener">清空</view>
   </view>
 </view>
