@@ -39,7 +39,7 @@ Page({
             icon: '../../resource/index/weight.png'
           },
           {
-            title: '亲戚关系',
+            title: '亲属称谓',
             url: '../kinsfolk/index',
             icon: '../../resource/index/kinsfolk.png'
           },
@@ -49,7 +49,23 @@ Page({
             icon: '../../resource/index/measurement.png'
           },
         ]
-      }
+      },
+      {
+        title: '聚会娱乐',
+        grids: [
+          {
+            title: '真心话大冒险',
+            url: '../challenge/index',
+            icon: '../../resource/index/challenge.png'
+          },
+          {
+            title: '谁是卧底',
+            url: '../undercover/index',
+            icon: '../../resource/index/undercover.png'
+          },
+          {},
+        ]
+      },
     ],
   },
   onLoad: function () {

@@ -6,6 +6,25 @@ page {
   height: 20px;
 }
 
+.select {
+  background-color: #FFFFFF;
+  padding: 10px 20px 10px 20px;
+}
+
+.select picker {
+  font-size: 1rem;
+}
+
+.divider {
+  background-color: #FFFFFF;
+}
+
+.divider .hr {
+  border: none;
+  border-top: 1px solid  #F2F2F2;
+  margin: 0 20px;
+}
+
 .output {
   background-color: #FFFFFF;
   padding: 10px 20px 10px 20px;
@@ -19,11 +38,4 @@ page {
 
 .button {
   padding: 50px 20px 50px 20px; 
-}
-
-.tip {
-  padding: 10px 20px 10px 20px;
-  color: #868686;
-  font-size: 0.8rem;
-  word-break: break-all;
 }

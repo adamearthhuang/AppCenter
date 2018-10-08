@@ -6,6 +6,10 @@
   </view>
 
   <view class="tip">
-    <text>温馨提示：安全扫描被屏蔽的二维码/条码信息。</text>
+    <text>温馨提示：可安全扫描被屏蔽的二维码/条码信息。</text>
+  </view>
+
+  <view class="button">
+    <button type="primary" bindtap="onScanListener">扫一扫</button>
   </view>
 </view>

@@ -1,0 +1,19 @@
+<view>
+  <view class="placeholder"></view>
+
+  <view class="select">
+    <picker bindchange="onSelectListener" value="{{ index }}" range="{{ array }}">{{ array[index] }}</picker>
+  </view>
+  
+   <view class="divider">
+    <view class="hr"></view>
+  </view>
+
+  <view class="output" bindtap="onOutputListener">
+    <text>{{ output }}</text>
+  </view>
+
+  <view class="button">
+    <button type="primary" bindtap="onNextListener">换一换</button>
+  </view>
+</view>

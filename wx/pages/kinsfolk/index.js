@@ -14,7 +14,7 @@ Page({
   },
   onShareAppMessage: function () {
     return {
-      title: '亲戚关系',
+      title: '亲属称谓',
       path: '/pages/kinsfolk/index'
     };
   },
@@ -59,6 +59,17 @@ Page({
 
     this.refresh();
   },
+  onOutputListener: function () {
+    wx.setClipboardData({
+      data: this.data.output,
+      success: function () {
+        wx.showToast({
+          title: '复制成功',
+          icon: 'success'
+        });
+      }
+    });
+  },
   refresh: function () {
     var result = convert({
       text: this.data.input,
@@ -68,7 +79,7 @@ Page({
     });
    
     this.setData({
-      output: result.length == 0 ? '未知' : result 
+      output: result.length == 0 ? '未知' : result.join('、') 
     });
   }
 });

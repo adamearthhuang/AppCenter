@@ -20,10 +20,3 @@ page {
 .button {
   padding: 50px 20px 50px 20px; 
 }
-
-.tip {
-  padding: 10px 20px 10px 20px;
-  color: #868686;
-  font-size: 0.8rem;
-  word-break: break-all;
-}
