@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "精选视频",
+  "usingComponents": {
+    "tencent-video": "plugin://tencent-video/video"
+  }
+}

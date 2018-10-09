@@ -4,14 +4,18 @@ Page({
   data: {
     items: [
       {
-        title: '限时推广',
+        title: '为你发现',
         grids: [
           {
             title: '今日推荐',
             url: '../advertisement/index',
             icon: '../../resource/index/advertisement.png'
           },
-          { },
+          {
+            title: '精选视频',
+            url: '../video/index',
+            icon: '../../resource/index/video.png'
+          },
           { },
         ]
       },
@@ -51,7 +55,7 @@ Page({
         ]
       },
       {
-        title: '聚会娱乐',
+        title: '休闲娱乐',
         grids: [
           {
             title: '真心话大冒险',

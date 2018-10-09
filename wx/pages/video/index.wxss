@@ -1,0 +1,40 @@
+page {
+  background-color: #EEEFF3;
+}
+
+.placeholder {
+  height: 20px;
+}
+
+.video {
+  background-color: #FFFFFF;
+  padding: 20px 20px 20px 20px;
+}
+
+.divider {
+  background-color: #FFFFFF;
+}
+
+.divider .hr {
+  border: none;
+  border-top: 1px solid  #F2F2F2;
+  margin: 0 20px;
+}
+
+.title {
+  background-color: #FFFFFF;
+  padding: 20px 20px 20px 20px;
+}
+
+.title text {
+  font-size: 1.2rem;
+  color: #02BD00;
+  word-break: break-all;
+}
+
+.tip {
+  padding: 10px 20px 10px 20px;
+  color: #868686;
+  font-size: 0.8rem;
+  word-break: break-all;
+}

@@ -9,12 +9,19 @@
     "pages/qrcode/index",
     "pages/kinsfolk/index",
     "pages/challenge/index",
-    "pages/undercover/index"
+    "pages/undercover/index",
+    "pages/video/index"
   ],
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#3A3B3E",
     "navigationBarTitleText": "应用中心",
     "navigationBarTextStyle":"white"
+  },
+  "plugins": {
+    "tencent-video": {
+      "version": "1.1.8",
+      "provider": "wxa75efa648b60994b"
+    }
   }
 }
