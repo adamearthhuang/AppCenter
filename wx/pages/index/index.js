@@ -12,7 +12,7 @@ Page({
             icon: '../../resource/index/advertisement.png'
           },
           {
-            title: '周末放映室',
+            title: '每周影院',
             url: '../video/index',
             icon: '../../resource/index/video.png'
           },

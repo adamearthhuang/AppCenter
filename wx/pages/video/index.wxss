@@ -1,5 +1,12 @@
 page {
-  background-color: #EEEFF3;
+  background-color: #09082f;
+}
+
+.bg {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: -999;
 }
 
 .placeholder {
@@ -7,34 +14,23 @@ page {
 }
 
 .video {
-  background-color: #FFFFFF;
-  padding: 20px 20px 20px 20px;
-}
-
-.divider {
-  background-color: #FFFFFF;
-}
-
-.divider .hr {
-  border: none;
-  border-top: 1px solid  #F2F2F2;
-  margin: 0 20px;
+  padding: 10px 20px 10px 20px;
 }
 
 .title {
-  background-color: #FFFFFF;
-  padding: 20px 20px 20px 20px;
+  padding: 10px 20px 10px 20px;
 }
 
 .title text {
-  font-size: 1.2rem;
-  color: #02BD00;
+  font-size: 1.4rem;
+  color: #4574EB;
+  font-weight: bold;
   word-break: break-all;
 }
 
 .tip {
-  padding: 10px 20px 10px 20px;
-  color: #868686;
+  padding: 20px 20px 20px 20px;
+  color: rgba(69, 116, 235, 0.4);
   font-size: 0.8rem;
   word-break: break-all;
 }

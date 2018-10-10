@@ -1,12 +1,10 @@
 <view>
+  <image class="bg" src="../../resource/video/bg.png"></image>
+
   <view class="placeholder"></view>
 
   <view class="video" bindtap="onOutputListener">
-    <tencent-video vid="{{ vid }}" autoplay="{{ true }}"></tencent-video>
-  </view>
-
-  <view class="divider">
-    <view class="hr"></view>
+    <tencent-video vid="{{ vid }}" autoplay="{{ true }}" loop="{{ true }}"></tencent-video>
   </view>
 
   <view class="title" bindtap="onTitleListener">
@@ -14,6 +12,6 @@
   </view>
 
   <view class="tip">
-    <text>温馨提示：每周末将放映精心推荐的电影，完整体验还请前往腾讯视频。</text>
+    <text>每周推荐最具代表性的优秀电影，完整观看体验还请前往腾讯视频，不负好时光。</text>
   </view>
 </view>
