@@ -1,5 +1,5 @@
 {
-  "navigationBarTitleText": "精选视频",
+  "navigationBarTitleText": "周末放映室",
   "backgroundColor": "#EEEFF3",
   "usingComponents": {
     "tencent-video": "plugin://tencent-video/video"

@@ -5,7 +5,7 @@ Page({
   },
   onShareAppMessage: function () {
     return {
-      title: '精选视频',
+      title: '周末放映室',
       path: '/pages/video/index'
     };
   },

@@ -12,7 +12,7 @@ Page({
             icon: '../../resource/index/advertisement.png'
           },
           {
-            title: '精选视频',
+            title: '周末放映室',
             url: '../video/index',
             icon: '../../resource/index/video.png'
           },
