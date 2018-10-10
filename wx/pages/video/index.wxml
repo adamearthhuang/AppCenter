@@ -13,11 +13,7 @@
     <text>{{ title }}</text>
   </view>
 
- 
-
   <view class="tip">
     <text>温馨提示：根据评分为你精心挑选的视频，完整版请前往腾讯视频进行体验。</text>
   </view>
-
- 
 </view>

@@ -1,5 +1,6 @@
 {
   "navigationBarTitleText": "精选视频",
+  "backgroundColor": "#EEEFF3",
   "usingComponents": {
     "tencent-video": "plugin://tencent-video/video"
   }
