@@ -16,7 +16,7 @@ Page({
   },
   onShareAppMessage: function () {
     return {
-      title: '每周影院',
+      title: '每周电影',
       path: '/pages/video/index'
     };
   },

@@ -1,0 +1,15 @@
+<view>
+  <view class="placeholder"></view>
+  
+  <view class="output" hidden="{{ hidden }}" bindtap="onOutputListener">
+    <text>{{ output }}</text>
+  </view>
+
+  <view class="tip">
+    <text>温馨提示：可便捷获取选定位置的具体地址信息。</text>
+  </view>
+
+  <view class="button">
+    <button type="primary" bindtap="onLocationListener">选择位置</button>
+  </view>
+</view>

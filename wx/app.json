@@ -10,7 +10,8 @@
     "pages/kinsfolk/index",
     "pages/challenge/index",
     "pages/undercover/index",
-    "pages/video/index"
+    "pages/video/index",
+    "pages/location/index"
   ],
   "window":{
     "backgroundTextStyle":"light",

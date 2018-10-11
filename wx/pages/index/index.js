@@ -12,7 +12,7 @@ Page({
             icon: '../../resource/index/advertisement.png'
           },
           {
-            title: '每周影院',
+            title: '每周电影',
             url: '../video/index',
             icon: '../../resource/index/video.png'
           },
@@ -52,6 +52,13 @@ Page({
             url: '../measurement/index',
             icon: '../../resource/index/measurement.png'
           },
+          {
+            title: '位置信息',
+            url: '../location/index',
+            icon: '../../resource/index/location.png'
+          },
+          { },
+          { },
         ]
       },
       {
