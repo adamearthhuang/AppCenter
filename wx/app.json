@@ -11,7 +11,8 @@
     "pages/challenge/index",
     "pages/undercover/index",
     "pages/video/index",
-    "pages/location/index"
+    "pages/location/index",
+    "pages/random/index"
   ],
   "window":{
     "backgroundTextStyle":"light",
