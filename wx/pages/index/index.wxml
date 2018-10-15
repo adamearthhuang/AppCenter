@@ -1,5 +1,21 @@
-<view>
-  <official-account></official-account>
+<view bindtouchend="onTouchEnd" >
+  <view class="bar">
+    <view>
+      
+    </view>
+
+    <view>
+      <view class="days">
+        <image src="../../resource/index/online.png"></image>
+        <text>100天</text>
+      </view>
+
+      <view class="days">
+        <image src="../../resource/index/offline.png"></image>
+        <text>7天</text>
+      </view>
+    </view>
+  </view>
 
   <view wx:for="{{ items }}" wx:for-item="item" wx:key="item">
     <view class="title">
@@ -12,6 +28,8 @@
         <text>{{ grid.title }}</text> 
       </navigator>
     </view>
+
+    <official-account></official-account>
   </view>
 </view>
 

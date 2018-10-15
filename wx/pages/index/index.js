@@ -82,6 +82,8 @@ Page({
         ]
       },
     ],
+    scrollTop: 0,
+    barHeight: 50
   },
   onLoad: function () {
     this.setData({
@@ -93,5 +95,21 @@ Page({
       title: '应用中心',
       path: '/pages/index/index'
     };
+  },
+  onPageScroll: function (e) { 
+    this.setData({
+      scrollTop: e.scrollTop
+    });
+  },
+  onTouchEnd: function (e) {
+    if (this.data.scrollTop <= this.data.barHeight / 2) {
+      wx.pageScrollTo({
+        scrollTop: 0
+      });
+    } else if (this.data.scrollTop <= this.data.barHeight) {
+      wx.pageScrollTo({
+        scrollTop: this.data.barHeight
+      });
+    }
   }
 });

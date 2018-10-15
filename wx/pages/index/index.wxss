@@ -3,6 +3,31 @@ page {
   font-size: 0.9rem;
 }
 
+.bar {
+  height: 50px;
+  background-color: #FFF;
+  padding: 0px 20px 0px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.bar .days {
+  display: inline-flex;
+}
+
+.bar .days image {
+  width: 15px;
+  height: 15px;
+  margin-right: 8px;
+  margin-top: 4px;
+  margin-left: 20px;
+}
+
+.bar .days text {
+  font-size: 16px;
+}
+
 .title {
   padding: 10px 20px 10px 20px;
   color: #868686;
