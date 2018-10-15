@@ -74,7 +74,11 @@ Page({
             url: '../undercover/index',
             icon: '../../resource/index/undercover.png'
           },
-          {},
+          {
+            title: '猜数字',
+            url: '../random/index',
+            icon: '../../resource/index/random.png'
+          },
         ]
       },
     ],

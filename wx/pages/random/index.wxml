@@ -1,0 +1,27 @@
+<view>
+  <view class="placeholder"></view>
+
+  <view class="input">
+    <input type="number" placeholder="数字范围下限" focus="true" bindinput="onMinInputListener" />
+  </view>
+  
+  <view class="divider">
+    <view class="hr"></view>
+  </view>
+
+  <view class="input">
+    <input type="number" placeholder="数字范围上限" bindinput="onMaxInputListener" />
+  </view>
+
+  <view class="divider" hidden="{{ hidden }}">
+    <view class="hr"></view>
+  </view>
+
+  <view class="output" hidden="{{ hidden }}" bindtap="onOutputListener">
+    <text>{{ output }}</text>
+  </view>
+
+  <view class="button">
+    <button type="primary" bindtap="onNextListener">猜一猜</button>
+  </view>
+</view>
