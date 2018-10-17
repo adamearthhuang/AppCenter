@@ -15,7 +15,7 @@ Page({
       data: this.data.output,
       success: function () {
         wx.showToast({
-          title: '复制成功',
+          title: '已复制',
           icon: 'success'
         });
       }

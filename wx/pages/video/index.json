@@ -1,5 +1,6 @@
 {
   "navigationBarTitleText": "每周电影",
+  "navigationBarTextStyle": "white",
   "navigationBarBackgroundColor": "#09082f",
   "backgroundColor": "#09082f",
   "disableScroll": true,

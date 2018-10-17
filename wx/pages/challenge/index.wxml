@@ -1,19 +1,23 @@
 <view>
   <view class="placeholder"></view>
 
-  <view class="select">
-    <picker bindchange="onSelectListener" value="{{ index }}" range="{{ array }}">{{ array[index] }}</picker>
-  </view>
-  
-   <view class="divider">
-    <view class="hr"></view>
+  <view class="weui-cells weui-cells_after-title">
+    <view class="weui-cell weui-cell_input">
+      <view class="weui-cell__bd">
+        <picker bindchange="onSelectListener" value="{{ index }}" range="{{ array }}">
+          <view class="weui-input">{{ array[index] }}</view>
+        </picker>
+      </view>
+    </view>
+
+    <view class="weui-cell" bindtap="onOutputListener">
+      <view class="weui-cell__bd">
+        <text>{{ output }}</text>
+      </view>
+    </view>
   </view>
 
-  <view class="output" bindtap="onOutputListener">
-    <text>{{ output }}</text>
-  </view>
-
-  <view class="button">
-    <button type="primary" bindtap="onNextListener">换一换</button>
+  <view class="weui-btn-area">
+    <button class="weui-btn" type="primary" bindtap="onNextListener">换一换</button>
   </view>
 </view>

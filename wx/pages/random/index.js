@@ -12,17 +12,29 @@ Page({
   },
   onMinInputListener: function (data) {
     this.setData({
-      min: data.detail.value,
-      output: '',
-      hidden: true
+      min: data.detail.value
     });
+
+    if (this.data.min != '' && this.data.max != '' && this.data.max * 1 >= this.data.min * 1) {
+      this.refresh();
+    } else {
+      this.setData({
+        hidden: true
+      });
+    }
   },
   onMaxInputListener: function (data) {
     this.setData({
-      max: data.detail.value,
-      output: '',
-      hidden: true
+      max: data.detail.value
     });
+
+    if (this.data.min != '' && this.data.max != '' && this.data.max * 1 >= this.data.min * 1) {
+      this.refresh();
+    } else {
+      this.setData({
+        hidden: true
+      });
+    }
   },
   onShareAppMessage: function () {
     return {
@@ -35,7 +47,7 @@ Page({
       data: this.data.output + '',
       success: function () {
         wx.showToast({
-          title: '复制成功',
+          title: '已复制',
           icon: 'success'
         });
       }

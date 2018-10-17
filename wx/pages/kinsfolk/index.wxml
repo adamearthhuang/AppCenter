@@ -1,20 +1,22 @@
 <view>
   <view class="placeholder"></view>
 
-  <view class="input">
-    <text>{{ input }}</text>
+  <view class="weui-cells weui-cells_after-title">
+    <view class="weui-cell">
+      <view class="weui-cell__bd">
+        <text>{{ input }}</text>
+      </view>
+    </view>
+
+    <view class="weui-cell" bindtap="onOutputListener">
+      <view class="weui-cell__bd">
+        <text class="hint">{{ multiArray[0][multiIndex[0]] }}，{{ multiArray[1][multiIndex[1]] }}</text>
+        <text class="output">{{ output }}</text>
+      </view>
+    </view>
   </view>
 
-  <view class="divider">
-    <view class="hr"></view>
-  </view>
-
-  <view class="output" bindtap="onOutputListener">
-    <text class="title">{{ multiArray[0][multiIndex[0]] }}，{{ multiArray[1][multiIndex[1]] }}</text>
-    <text class="content">{{ output }}</text>
-  </view>
-
-  <view class="grid-flex">
+  <view class="grids">
     <view class="grid" hover-class="hover" data-value="爸爸" bindtap="onGridListener">爸爸</view>
     <view class="grid" hover-class="hover" data-value="妈妈" bindtap="onGridListener">妈妈</view>
     <view class="grid" hover-class="hover" data-value="哥哥" bindtap="onGridListener">哥哥</view>

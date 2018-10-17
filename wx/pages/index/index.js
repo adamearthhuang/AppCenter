@@ -81,14 +81,14 @@ Page({
           },
         ]
       },
-    ],
-    scrollTop: 0,
-    barHeight: 50
+    ]
   },
   onLoad: function () {
     this.setData({
-      gridHeight: util.getScreenWidth() / 3 + 'px'
+      gridHeight: util.getScreenWidth() / 3 + 'px',
     });
+
+    this.request();
   },
   onShareAppMessage: function () {
     return {
@@ -96,20 +96,27 @@ Page({
       path: '/pages/index/index'
     };
   },
-  onPageScroll: function (e) { 
-    this.setData({
-      scrollTop: e.scrollTop
+  request: function () {
+    var $this = this;
+
+    // 获取应用数据
+    wx.cloud.callFunction({
+      name: 'app',
+      success: function (res) {
+        $this.setData({
+          users: res.result.data.users
+        });
+      }
     });
-  },
-  onTouchEnd: function (e) {
-    if (this.data.scrollTop <= this.data.barHeight / 2) {
-      wx.pageScrollTo({
-        scrollTop: 0
-      });
-    } else if (this.data.scrollTop <= this.data.barHeight) {
-      wx.pageScrollTo({
-        scrollTop: this.data.barHeight
-      });
-    }
+
+    // 登录
+    wx.cloud.callFunction({
+      name: 'login',
+      success: function (res) {
+        $this.setData({
+          loginDays: res.result.data.loginDays
+        });
+      }
+    });
   }
 });

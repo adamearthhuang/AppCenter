@@ -1,37 +1,14 @@
+@import '../../libs/weui.wxss';
+
 page {
-  background-color: #EEEFF3;
+  background-color: #f8f8f8;
 }
 
 .placeholder {
   height: 20px;
 }
 
-.input {
-  background-color: #FFFFFF;
-  padding: 10px 20px 10px 20px;
-}
-
-.input input {
-  font-size: 1rem;
-}
-
-.divider {
-  background-color: #FFFFFF;
-}
-
-.divider .hr {
-  border: none;
-  border-top: 1px solid  #F2F2F2;
-  margin: 0 20px;
-}
-
-.output {
-  background-color: #FFFFFF;
-  padding: 10px 20px 10px 20px;
-}
-
-.output text {
-  font-size: 1rem;
+text {
   color: #02BD00;
   word-break: break-all;
 }

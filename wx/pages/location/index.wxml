@@ -1,15 +1,17 @@
 <view>
   <view class="placeholder"></view>
-  
-  <view class="output" hidden="{{ hidden }}" bindtap="onOutputListener">
-    <text>{{ output }}</text>
+
+  <view class="weui-cells weui-cells_after-title" hidden="{{ hidden }}" bindtap="onOutputListener">
+    <view class="weui-cell">
+      <view class="weui-cell__bd">
+        <text>{{ output }}</text>
+      </view>
+    </view>
   </view>
 
-  <view class="tip">
-    <text>温馨提示：可便捷获取选定位置的具体地址信息。</text>
-  </view>
+  <view class="weui-cells__tips">可便捷获取选定位置的具体地址信息。</view>
 
-  <view class="button">
-    <button type="primary" bindtap="onLocationListener">选择位置</button>
+  <view class="weui-btn-area">
+    <button class="weui-btn" type="primary" bindtap="onLocationListener">选择位置</button>
   </view>
 </view>

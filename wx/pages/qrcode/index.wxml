@@ -1,15 +1,17 @@
 <view>
   <view class="placeholder"></view>
-  
-  <view class="output" hidden="{{ hidden }}" bindtap="onOutputListener">
-    <text>{{ output }}</text>
+
+  <view class="weui-cells weui-cells_after-title" hidden="{{ hidden }}" bindtap="onOutputListener">
+    <view class="weui-cell">
+      <view class="weui-cell__bd">
+        <text>{{ output }}</text>
+      </view>
+    </view>
   </view>
 
-  <view class="tip">
-    <text>温馨提示：可安全扫描被屏蔽的二维码/条码信息。</text>
-  </view>
+  <view class="weui-cells__tips">可安全扫描被屏蔽的二维码/条码信息。</view>
 
-  <view class="button">
-    <button type="primary" bindtap="onScanListener">扫一扫</button>
+  <view class="weui-btn-area">
+    <button class="weui-btn" type="primary" bindtap="onScanListener">扫一扫</button>
   </view>
 </view>

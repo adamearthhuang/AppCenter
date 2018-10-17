@@ -25,7 +25,7 @@ Page({
       data: this.data.title,
       success: function () {
         wx.showToast({
-          title: '复制成功',
+          title: '已复制',
           icon: 'success'
         });
       }
@@ -38,12 +38,9 @@ Page({
       });
     }
 
-    wx.setStorage({
-      key: 'video',
-      data: {
-        timestamp: this.data.timestamp,
-        index: this.data.index
-      }
+    wx.setStorageSync('video', {
+      timestamp: this.data.timestamp,
+      index: this.data.index
     });
   },
   readStorage: function () {

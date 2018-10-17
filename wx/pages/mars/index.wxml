@@ -1,15 +1,17 @@
 <view>
   <view class="placeholder"></view>
-    
-  <view class="input">
-    <input type="text" placeholder="還誋嘚噹哖非註蓅の洎巳嗎？" focus="true" bindinput="onInputListener" />
-  </view>
 
-  <view class="divider" hidden="{{ hidden }}">
-    <view class="hr"></view>
-  </view>
+  <view class="weui-cells weui-cells_after-title">
+    <view class="weui-cell weui-cell_input">
+      <view class="weui-cell__bd">
+        <input class="weui-input" type="text" placeholder="還誋嘚噹哖非註蓅の洎巳嗎？" focus="true" bindinput="onInputListener"/>
+      </view>
+    </view>
 
-  <view class="output" hidden="{{ hidden }}" bindtap="onOutputListener">
-    <text>{{ output }}</text>
+    <view class="weui-cell" hidden="{{ hidden }}" bindtap="onOutputListener">
+      <view class="weui-cell__bd">
+        <text>{{ output }}</text>
+      </view>
+    </view>
   </view>
 </view>

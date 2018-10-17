@@ -1,85 +1,64 @@
+@import '../../libs/weui.wxss';
+
 page {
-  background-color: #EEEFF3;
-  font-size: 1rem;
+  background-color: #f8f8f8;
 }
 
 .placeholder {
   height: 20px;
 }
 
-.input {
-  background-color: #FFFFFF;
-  padding: 10px 20px 10px 20px;
-}
-
-.input text {
-  font-size: 1rem;
+.hint {
+  color: #999;
   word-break: break-all;
-}
-
-.divider {
-  background-color: #FFFFFF;
-}
-
-.divider .hr {
-  border: none;
-  border-top: 1px solid  #F2F2F2;
-  margin: 0 20px;
+  font-size: 0.8rem;
 }
 
 .output {
-  background-color: #FFFFFF;
-  padding: 10px 20px 10px 20px;
-}
-
-.output .title {
-  font-size: 0.8rem;
-  color: #868686;
-  word-break: break-all;
-}
-
-.output .content {
-  font-size: 1rem;
   color: #02BD00;
   word-break: break-all;
   display: block;
   margin-top: 10px;
 }
 
-.grid-flex {
+.grids {
   display: flex;
   flex-wrap: wrap;
   position: absolute;
   bottom: 0;
   width: 100%;
+  border-top: 1rpx solid #d9d9d9;
+  border-left: 1rpx solid #d9d9d9;
 }
 
-.grid-flex .grid {
+.grids .grid {
   width: 33.333333%;
   height: 60px;
   display: flex;
   justify-content: center;
   align-items: center;
-  box-sizing: border-box;
-  border: 0.5px solid #F2F2F2;
   background-color: #FFF;
+  box-sizing: border-box;
+  border-right: 1rpx solid #d9d9d9;
+  border-bottom: 1rpx solid #d9d9d9;
 }
 
-.grid-flex .grid2 {
+.grids .grid2 {
   width: 33.333333%;
   height: 60px;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #FAFAFB;
   box-sizing: border-box;
-  border: 0.5px solid #F2F2F2;
+  border-right: 1rpx solid #d9d9d9;
+  border-bottom: 1rpx solid #d9d9d9;
+}
+
+.grids .hover {
   background-color: #FAFAFB;
 }
 
-.grid-flex .hover {
-  background-color: #FAFAFB;
-}
-
-.grid-flex .hover2 {
+.grids .hover2 {
   background-color: #FFF;
 }

@@ -1,35 +1,42 @@
 <view>
   <view class="placeholder"></view>
-  
-  <view class="input">
-    <input type="number" placeholder="身高（厘米）"  focus="true" bindinput="onHeightInputListener" />
+
+  <view class="weui-cells weui-cells_after-title">
+    <view class="weui-cell weui-cell_input">
+      <view class="weui-cell__hd">
+        <view class="weui-label">身高</view>
+      </view>
+      <view class="weui-cell__bd">
+        <input  class="weui-input" type="number" placeholder="请输入身高（厘米）"  focus="true" bindinput="onHeightInputListener" />
+      </view>
+    </view>
+
+    <view class="weui-cell weui-cell_input">
+      <view class="weui-cell__hd">
+        <view class="weui-label">体重</view>
+      </view>
+      <view class="weui-cell__bd">
+        <input class="weui-input" type="number" placeholder="请输入体重（公斤）" bindinput="onWeightInputListener" />
+      </view>
+    </view>
+
+    <view class="weui-cell weui-cell_input">
+      <view class="weui-cell__hd">
+        <view class="weui-label">性别</view>
+      </view>
+      <view class="weui-cell__bd">
+        <picker bindchange="onSexSelectListener" value="{{ sexIndex }}" range="{{ sexArray }}">
+          <view class="weui-input">{{ sexArray[sexIndex] }}</view>
+        </picker>
+      </view>
+    </view>
+
+    <view class="weui-cell" hidden="{{ hidden }}" bindtap="onOutputListener">
+      <view class="weui-cell__bd">
+        <text>{{ output }}</text>
+      </view>
+    </view>
   </view>
 
-  <view class="divider">
-    <view class="hr"></view>
-  </view>
-
-  <view class="input">
-    <input type="number" placeholder="体重（公斤）" bindinput="onWeightInputListener" />
-  </view>
-
-  <view class="divider">
-    <view class="hr"></view>
-  </view>
-
-  <view class="select">
-    <picker bindchange="onSexSelectListener" value="{{ sexIndex }}" range="{{ sexArray }}">{{ sexArray[sexIndex] }}</picker>
-  </view>
-
-  <view class="divider" hidden="{{ hidden }}">
-    <view class="hr"></view>
-  </view>
-
-  <view class="output" hidden="{{ hidden }}" bindtap="onOutputListener">
-    <text>{{ output }}</text>
-  </view>
-
-  <view class="tip">
-    <text>温馨提示：查询结果仅供参考，请务必进行多方验证。</text>
-  </view>
+  <view class="weui-cells__tips">查询结果仅供参考，请务必进行多方验证。</view>
 </view>

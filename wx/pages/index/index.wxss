@@ -1,59 +1,43 @@
+@import '../../libs/weui.wxss';
+
 page {
-  background-color: #EEEFF3;
+  background-color: #f8f8f8;
   font-size: 0.9rem;
 }
 
-.bar {
-  height: 50px;
-  background-color: #FFF;
-  padding: 0px 20px 0px 20px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.bar .days {
-  display: inline-flex;
-}
-
-.bar .days image {
-  width: 15px;
-  height: 15px;
-  margin-right: 8px;
-  margin-top: 4px;
-  margin-left: 20px;
-}
-
-.bar .days text {
-  font-size: 16px;
-}
-
 .title {
-  padding: 10px 20px 10px 20px;
+  padding: 10px 15px 10px 15px;
   color: #868686;
 }
 
-.grid-flex {
+.grids {
   display: flex;
   flex-wrap: wrap;
+  border-top: 1rpx solid #d9d9d9;
+  border-left: 1rpx solid #d9d9d9;
 }
 
-.grid-flex .grid {
+.grids .grid {
   width: 33.333333%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  box-sizing: border-box;
-  border: 0.5px solid #F2F2F2;
   background-color: #FFF;
+  box-sizing: border-box;
+  border-right: 1rpx solid #d9d9d9;
+  border-bottom: 1rpx solid #d9d9d9
 }
 
-.grid-flex .grid image {
+.grids .grid image {
   width: 27px;
   height: 27px;
 }
 
-.grid-flex .grid text {
+.grids .grid text {
   margin: 10px 0 0 0;
+}
+
+.footer {
+  padding: 40px 0px 10px 0px;
 }

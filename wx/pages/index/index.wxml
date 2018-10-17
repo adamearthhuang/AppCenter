@@ -1,35 +1,22 @@
 <view bindtouchend="onTouchEnd" >
-  <view class="bar">
-    <view>
-      
-    </view>
-
-    <view>
-      <view class="days">
-        <image src="../../resource/index/online.png"></image>
-        <text>100天</text>
-      </view>
-
-      <view class="days">
-        <image src="../../resource/index/offline.png"></image>
-        <text>7天</text>
-      </view>
-    </view>
-  </view>
+  <official-account></official-account>
 
   <view wx:for="{{ items }}" wx:for-item="item" wx:key="item">
     <view class="title">
       <text>{{ item.title }}</text>
     </view>
 
-    <view class="grid-flex">
-      <navigator wx:for="{{ item.grids }}" wx:for-item="grid" wx:key="grid" url="{{ grid.url }}" class="grid" style="height:{{ gridHeight }};">
+    <view class="grids">
+      <navigator class="grid" wx:for="{{ item.grids }}" wx:for-item="grid" wx:key="grid" url="{{ grid.url }}" style="height:{{ gridHeight }};">
         <image src="{{ grid.icon }}"></image>
         <text>{{ grid.title }}</text> 
       </navigator>
     </view>
+  </view>
 
-    <official-account></official-account>
+  <view class="weui-footer footer">
+    <view class="weui-footer__text">已使用 {{ loginDays }} 天</view>
+    <view class="weui-footer__text">累计用户 {{ users }} </view>
   </view>
 </view>
 
