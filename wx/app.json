@@ -15,14 +15,14 @@
     "pages/random/index"
   ],
   "window":{
-    "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#3A3B3E",
     "navigationBarTitleText": "应用中心",
-    "navigationBarTextStyle":"white"
+    "navigationBarTextStyle": "black",
+    "navigationBarBackgroundColor": "#f8f8f8",
+    "backgroundColor": "#f8f8f8"
   },
   "plugins": {
     "tencent-video": {
-      "version": "1.1.8",
+      "version": "1.2.0",
       "provider": "wxa75efa648b60994b"
     }
   }
