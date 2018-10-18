@@ -88,7 +88,7 @@ Page({
       gridHeight: util.getScreenWidth() / 3 + 'px',
     });
 
-    this.request();
+    this.login();
   },
   onShareAppMessage: function () {
     return {
@@ -96,26 +96,39 @@ Page({
       path: '/pages/index/index'
     };
   },
-  request: function () {
+  login: function () {
     var $this = this;
 
-    // 获取应用数据
-    wx.cloud.callFunction({
-      name: 'app',
-      success: function (res) {
-        $this.setData({
-          users: res.result.data.users
-        });
-      }
-    });
-
-    // 登录
     wx.cloud.callFunction({
       name: 'login',
       success: function (res) {
+        console.log('login', res.result);
+
+        // 使用天数、累计用户
         $this.setData({
-          loginDays: res.result.data.loginDays
+          loginDays: res.result.data.loginDays,
+          userSum: res.result.data.userSum
         });
+
+        // 红包
+        if (res.result.data.moneyEnable) {
+          $this.setData({
+            items: [
+              {
+                title: '限时推广',
+                grids: [
+                  {
+                    title: '红包',
+                    url: '../money/index',
+                    icon: '../../resource/index/money.png'
+                  },
+                  {},
+                  {}
+                ]
+              }
+            ].concat($this.data.items)
+          });
+        }
       }
     });
   }

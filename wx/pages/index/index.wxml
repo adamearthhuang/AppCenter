@@ -1,4 +1,4 @@
-<view bindtouchend="onTouchEnd" >
+<view>
   <official-account></official-account>
 
   <view wx:for="{{ items }}" wx:for-item="item" wx:key="item">
@@ -16,7 +16,7 @@
 
   <view class="weui-footer footer">
     <view class="weui-footer__text">已使用 {{ loginDays }} 天</view>
-    <view class="weui-footer__text">累计用户 {{ users }} </view>
+    <view class="weui-footer__text">累计用户 {{ userSum }} </view>
   </view>
 </view>
 
