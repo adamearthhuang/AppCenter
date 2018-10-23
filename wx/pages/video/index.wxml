@@ -4,11 +4,11 @@
   <view class="placeholder"></view>
 
   <view class="video" bindtap="onOutputListener">
-    <tencent-video vid="{{ vid }}" autoplay="{{ true }}" loop="{{ true }}"></tencent-video>
+    <tencent-video vid="{{ vid }}" autoplay="{{ true }}"></tencent-video>
   </view>
 
-  <view class="title" bindtap="onTitleListener">
-    <text>{{ title }}</text>
+  <view class="name" bindtap="onNameListener">
+    <text>{{ name }}</text>
   </view>
 
   <view class="tip">

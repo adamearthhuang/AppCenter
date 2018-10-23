@@ -7,7 +7,7 @@
       <view class="content">最高99元现金红包</view>
     </view>
     <view class="bottom">
-      <view class="tip">活动期间每人每天均可领取，领取后打开支付宝即可使用。</view>
+      <view class="tip">活动期间每人每天均可领取，领取后打开支付宝首页直接粘贴搜索即可使用。</view>
       <button hover-class="button-hover" bindtap="onOkListener">领取</button>
     </view>
   </view>

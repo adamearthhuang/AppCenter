@@ -10,7 +10,7 @@ Page({
   },
   onOkListener: function () {
     wx.setClipboardData({
-      data: 'r睿睿尧L慧V钧翰3利聚',
+      data: '544225785',
       success: function () {
         wx.showToast({ 
           title: '已领取',

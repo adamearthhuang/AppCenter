@@ -17,11 +17,11 @@ page {
   padding: 10px 15px 10px 15px;
 }
 
-.title {
+.name {
   padding: 10px 15px 10px 15px;
 }
 
-.title text {
+.name text {
   font-size: 1.4rem;
   color: #4574EB;
   font-weight: bold;
