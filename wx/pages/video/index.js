@@ -14,7 +14,7 @@ Page({
   },
   onNameListener: function () {
     wx.setClipboardData({
-      data: this.data.title,
+      data: this.data.name,
       success: function () {
         wx.showToast({
           title: '已复制',
