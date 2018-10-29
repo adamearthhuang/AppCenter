@@ -1,0 +1,13 @@
+<view>
+  <view class="user" wx:for="{{ users }}" wx:for-item="user" wx:key="user">
+    <view>
+      <text class="rank">{{ index + 1 }}</text>
+      <image class="avatar" src="{{ user.avatar }}"></image>
+      <text class="nickname">{{ user.nickname }}</text>
+    </view>
+
+    <view>
+      <text class="loginDays">{{ user.loginDays }}</text>
+    </view>
+  </view>
+</view>

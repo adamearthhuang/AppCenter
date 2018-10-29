@@ -5,7 +5,7 @@
     <button hover-class="hover" open-type="getUserInfo" bindgetuserinfo="onGetUserInfo">微信登录</button>
   </view>
 
-  <view class="bar-user" hidden="{{ !hasLogin }}">
+  <view class="bar-user" hidden="{{ !hasLogin }}" bindtap="onUserBarClickListener">
     <view>
       <image class="avatar" src="{{ avatar }}"></image>
     </view>

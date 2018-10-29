@@ -111,6 +111,11 @@ Page({
       avatar: userInfo.avatarUrl,
     });
   }, 
+  onUserBarClickListener: function () {
+    wx.navigateTo({
+      url: '../rank/index',
+    });
+  },
   login: function () {
     var $this = this;
 
