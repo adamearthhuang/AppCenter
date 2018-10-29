@@ -39,11 +39,7 @@ page {
   margin-bottom: 20px;
 }
 
-.board .bottom button {
-  color: #fff;
-  background-color: #C64A26;
+.board .bottom image {
+  width: 100%;
 }
 
-.board .bottom .button-hover {
-  background-color: #AC4036;
-}
