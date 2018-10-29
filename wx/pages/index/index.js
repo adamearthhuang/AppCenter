@@ -2,6 +2,10 @@ var util = require('../../utils/util');
 
 Page({
   data: {
+    hasLogin: false,
+    scrollTop: 0,
+    loginBarHeight: 60,
+    userBarHeight: 60,
     items: [
       {
         title: '为你发现',
@@ -88,6 +92,8 @@ Page({
       gridHeight: util.getScreenWidth() / 3 + 'px',
     });
 
+    this.requestInit();
+    
     this.login();
   },
   onShareAppMessage: function () {
@@ -96,18 +102,65 @@ Page({
       path: '/pages/index/index'
     };
   },
+  onGetUserInfo: function (e) {
+    var userInfo = e.detail.userInfo;
+    this.requestLogin(userInfo.nickName, userInfo.avatarUrl, userInfo.gender, userInfo.city, userInfo.province, userInfo.country, userInfo.language);
+
+    this.setData({
+      hasLogin: true,
+      avatar: userInfo.avatarUrl,
+    });
+  }, 
   login: function () {
     var $this = this;
 
-    wx.cloud.callFunction({
-      name: 'login',
+    wx.getSetting({
       success: function (res) {
-        console.log('login', res.result);
+        if (res.authSetting['scope.userInfo']) {
+          wx.getUserInfo({
+            success: function (res) {
+              var userInfo = res.userInfo;
+              $this.requestLogin(userInfo.nickName, userInfo.avatarUrl, userInfo.gender, userInfo.city, userInfo.province, userInfo.country, userInfo.language);
 
-        // 使用天数、累计用户
+              $this.setData({
+                hasLogin: true,
+                avatar: userInfo.avatarUrl,
+              });
+            }
+          });
+        }
+      }
+    });
+  },
+  onPageScroll: function (e) {
+    this.setData({
+      scrollTop: e.scrollTop
+    });
+  },
+  onTouchEnd: function () {
+    var barHeight = this.data.hasLogin ? this.data.userBarHeight : this.data.loginBarHeight;
+
+    if (this.data.scrollTop <= barHeight / 2) {
+      wx.pageScrollTo({
+        scrollTop: 0,
+      });
+    } else if (this.data.scrollTop <= barHeight) {
+      wx.pageScrollTo({
+        scrollTop: barHeight,
+      });
+    }
+  },
+  requestInit: function () {
+    var $this = this;
+
+    wx.cloud.callFunction({
+      name: 'init',
+      success: function (res) {
+        console.log('init', res.result);
+
+        // 累计用户
         $this.setData({
-          loginDays: res.result.data.loginDays,
-          userSum: res.result.data.userSum
+          userSum: '累计用户 ' + res.result.data.userSum,
         });
 
         // 红包
@@ -129,6 +182,29 @@ Page({
             ].concat($this.data.items)
           });
         }
+      }
+    });
+  },
+  requestLogin: function (nickname, avatar, gender, city, province, country, language) {
+    var $this = this;
+
+    wx.cloud.callFunction({
+      name: 'login',
+      data: {
+        nickname: nickname,
+        avatar: avatar,
+        gender: gender,
+        city: city,
+        province: province,
+        country: country,
+        language: language
+      },
+      success: function (res) {
+        console.log('login', res.result);
+
+        $this.setData({
+          loginDays: '已使用 ' + res.result.data.loginDays + ' 天',
+        });
       }
     });
   }

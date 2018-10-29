@@ -5,6 +5,44 @@ page {
   font-size: 0.9rem;
 }
 
+.bar-login {
+  height: 40px;
+  padding: 10px 10px 10px 10px;
+}
+
+.bar-login button {
+  font-size: 15px;
+  background: #fff;
+  color: #868686;
+}
+
+.bar-login .hover {
+  background: #FAFAFB;
+}
+
+.bar-user {
+  height: 40px;
+  padding: 10px 10px 10px 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.bar-user view {
+  display: flex;
+  align-items: center;
+}
+
+.bar-user .avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;  
+}
+
+.bar-user .loginDays {
+  font-size: 0.8rem;
+  color: #868686;
+}
+
 .title {
   padding: 10px 15px 10px 15px;
   color: #868686;
