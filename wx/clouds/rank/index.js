@@ -8,17 +8,22 @@ const db = cloud.database();
 // 云函数入口函数
 exports.main = async (event, context) => {
   try {
-    let result = await db.collection('_user').orderBy('loginDays', 'desc').limit(100).get();
+    let result = await db.collection('_user')
+                          .orderBy('loginDays', 'desc')
+                          .where({
+                            gender: db.command.gte(0)
+                          })
+                          .limit(100)
+                          .get();
 
     var data = [];
     for (let i = 0; i < result.data.length; i++) {
-      if (result.data[i].avatar) {
-        data.push({
-          avatar: result.data[i].avatar,
-          nickname: result.data[i].nickname,
-          loginDays: result.data[i].loginDays
-        });
-      }
+      data.push({
+        avatar: result.data[i].avatar,
+        nickname: result.data[i].nickname,
+        loginDays: result.data[i].loginDays
+      });
+      
     }
 
     return {
