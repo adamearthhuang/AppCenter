@@ -8,6 +8,7 @@
   <view class="bar-user" hidden="{{ !hasLogin }}" bindtap="onUserBarClickListener">
     <view>
       <image class="avatar" src="{{ avatar }}"></image>
+      <text class="nickname">{{ nickname }}</text>
     </view>
 
     <view>

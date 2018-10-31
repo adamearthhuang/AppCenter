@@ -109,6 +109,7 @@ Page({
     this.setData({
       hasLogin: true,
       avatar: userInfo.avatarUrl,
+      nickname: userInfo.nickName
     });
   }, 
   onUserBarClickListener: function () {
@@ -130,6 +131,7 @@ Page({
               $this.setData({
                 hasLogin: true,
                 avatar: userInfo.avatarUrl,
+                nickname: userInfo.nickName
               });
             }
           });

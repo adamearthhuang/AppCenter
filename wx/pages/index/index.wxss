@@ -38,6 +38,11 @@ page {
   border-radius: 50%;  
 }
 
+.bar-user .nickname {
+  font-size: 1rem;
+  margin-left: 10px;
+}
+
 .bar-user .loginDays {
   font-size: 0.8rem;
   color: #868686;
