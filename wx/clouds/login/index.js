@@ -1,5 +1,6 @@
 // 云函数入口文件
 const cloud = require('wx-server-sdk');
+const moment = require('moment');
 
 cloud.init();
 
@@ -9,7 +10,7 @@ const db = cloud.database();
 exports.main = async (event, context) => {
   try {
     let openId = event.userInfo.openId;
-    let loginTime = new Date().toLocaleDateString().replace(/-/g, '') * 1;
+    let loginTime = moment().format('YYYYMMDD') * 1;
     let loginDays = 1;
     let nickname = event.nickname;
     let avatar = event.avatar;
@@ -47,8 +48,8 @@ exports.main = async (event, context) => {
       loginTime = result.data[0].loginTime;
       loginDays = result.data[0].loginDays;
 
-      if (new Date().toLocaleDateString().replace(/-/g, '') * 1 > loginTime * 1) {
-        loginTime = new Date().toLocaleDateString().replace(/-/g, '') * 1;
+      if (moment().format('YYYYMMDD') * 1 > loginTime * 1) {
+        loginTime =  moment().format('YYYYMMDD') * 1;
         loginDays++;
       }
 
@@ -82,7 +83,7 @@ exports.main = async (event, context) => {
         city: city,
         province: province,
         country: country,
-        language: language
+        language: language,
       }
     };
     
