@@ -6,12 +6,15 @@
   </view>
 
   <view class="bar-user" hidden="{{ !hasLogin }}" bindtap="onUserBarClickListener">
-    <view>
+    <view class="between">
       <image class="avatar" src="{{ avatar }}"></image>
-      <text class="nickname">{{ nickname }}</text>
+      <view class="info">
+        <text class="nickname">{{ nickname }}</text>
+        <text class="tips">{{ tips }}</text>
+      </view>
     </view>
 
-    <view>
+    <view class="between">
       <text class="loginDays">{{ loginDays }}</text>
     </view>
   </view>

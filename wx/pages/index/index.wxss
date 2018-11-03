@@ -21,26 +21,36 @@ page {
 }
 
 .bar-user {
-  height: 40px;
+  height: 50px;
   padding: 10px 10px 10px 10px;
   display: flex;
   justify-content: space-between;
 }
 
-.bar-user view {
+.bar-user .between {
   display: flex;
   align-items: center;
 }
 
 .bar-user .avatar {
-  width: 36px;
-  height: 36px;
+  width: 44px;
+  height: 44px;
   border-radius: 50%;  
+}
+
+.bar-user .info {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
 }
 
 .bar-user .nickname {
   font-size: 1rem;
-  margin-left: 10px;
+}
+
+.bar-user .tips {
+  font-size: 0.8rem;
+  color: #868686;
 }
 
 .bar-user .loginDays {
