@@ -13,12 +13,12 @@ Page({
           {
             title: '今日推荐',
             url: '../advertisement/index',
-            icon: '../../resource/index/advertisement.png'
+            icon: '../../resources/index/advertisement.png'
           },
           {
             title: '每周电影',
             url: '../video/index',
-            icon: '../../resource/index/video.png'
+            icon: '../../resources/index/video.png'
           },
           { },
         ]
@@ -29,37 +29,37 @@ Page({
           {
             title: '人民币大写',
             url: '../rmb/index',
-            icon: '../../resource/index/rmb.png'
+            icon: '../../resources/index/rmb.png'
           },
           {
             title: '安全扫码',
             url: '../qrcode/index',
-            icon: '../../resource/index/qrcode.png'
+            icon: '../../resources/index/qrcode.png'
           },
           {
             title: '非主流火星文',
             url: '../mars/index',
-            icon: '../../resource/index/mars.png'
+            icon: '../../resources/index/mars.png'
           },
           {
             title: '标准体重',
             url: '../weight/index',
-            icon: '../../resource/index/weight.png'
+            icon: '../../resources/index/weight.png'
           },
           {
             title: '亲属称谓',
             url: '../kinsfolk/index',
-            icon: '../../resource/index/kinsfolk.png'
+            icon: '../../resources/index/kinsfolk.png'
           },
           {
             title: '女性标准三围',
             url: '../measurement/index',
-            icon: '../../resource/index/measurement.png'
+            icon: '../../resources/index/measurement.png'
           },
           {
             title: '位置信息',
             url: '../location/index',
-            icon: '../../resource/index/location.png'
+            icon: '../../resources/index/location.png'
           },
           { },
           { },
@@ -71,17 +71,17 @@ Page({
           {
             title: '真心话大冒险',
             url: '../challenge/index',
-            icon: '../../resource/index/challenge.png'
+            icon: '../../resources/index/challenge.png'
           },
           {
             title: '谁是卧底',
             url: '../undercover/index',
-            icon: '../../resource/index/undercover.png'
+            icon: '../../resources/index/undercover.png'
           },
           {
             title: '猜数字',
             url: '../random/index',
-            icon: '../../resource/index/random.png'
+            icon: '../../resources/index/random.png'
           },
         ]
       },
@@ -180,7 +180,7 @@ Page({
                   {
                     title: '红包',
                     url: '../money/index',
-                    icon: '../../resource/index/money.png'
+                    icon: '../../resources/index/money.png'
                   },
                   {},
                   {}

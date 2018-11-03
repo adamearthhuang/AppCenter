@@ -1,5 +1,5 @@
 <view>
-  <image class="bg" src="../../resource/video/bg.png"></image>
+  <image class="bg" src="../../resources/video/bg.png"></image>
 
   <view class="placeholder"></view>
 

@@ -8,7 +8,7 @@
     </view>
     <view class="bottom">
       <view class="tip">活动期间每人每天均可领取，打开支付宝扫一扫以下二维码即可领取。</view>
-      <image src="../../resource/money/qrcode.png" style="height:{{ height }}px;"></image>
+      <image src="../../resources/money/qrcode.png" style="height:{{ height }}px;"></image>
     </view>
   </view>
 

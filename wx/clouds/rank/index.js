@@ -40,4 +40,4 @@ exports.main = async (event, context) => {
       msg: 'failure'
     };
   }
-}
+};
