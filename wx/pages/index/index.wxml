@@ -25,10 +25,17 @@
     </view>
 
     <view class="grids">
-      <navigator class="grid" wx:for="{{ item.grids }}" wx:for-item="grid" wx:key="grid" url="{{ grid.url }}" style="height:{{ gridHeight }};">
-        <image src="{{ grid.icon }}"></image>
-        <text>{{ grid.title }}</text> 
-      </navigator>
+      <block wx:for="{{ item.grids }}" wx:for-item="grid" wx:key="grid">
+        <navigator wx:if="{{ grid.miniProgram}}" class="grid" target="miniProgram" app-id="{{ grid.appId }}" style="height:{{ gridHeight }};">
+          <image src="{{ grid.icon }}"></image>
+          <text>{{ grid.title }}</text> 
+        </navigator>
+
+        <navigator wx:else class="grid" url="{{ grid.url }}" style="height:{{ gridHeight }};">
+          <image src="{{ grid.icon }}"></image>
+          <text>{{ grid.title }}</text> 
+        </navigator>
+      </block>
     </view>
   </view>
 

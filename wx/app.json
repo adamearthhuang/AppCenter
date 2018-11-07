@@ -22,6 +22,9 @@
     "navigationBarBackgroundColor": "#f8f8f8",
     "backgroundColor": "#f8f8f8"
   },
+  "navigateToMiniProgramAppIdList": [
+    "wx7c8d593b2c3a7703"
+  ],
   "plugins": {
     "tencent-video": {
       "version": "1.1.8",

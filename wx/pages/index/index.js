@@ -85,6 +85,19 @@ Page({
           },
         ]
       },
+      {
+        title: '精品游戏',
+        grids: [
+          {
+            title: '跳一跳',
+            miniProgram: true,
+            appId: 'wx7c8d593b2c3a7703',
+            icon: '../../resources/index/jump.png'
+          },
+          { },
+          { },
+        ]
+      },
     ]
   },
   onLoad: function () {
