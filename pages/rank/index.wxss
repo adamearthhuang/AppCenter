@@ -1,0 +1,36 @@
+page {
+  background-color: #f8f8f8;
+}
+
+.user {
+  padding: 15px 20px 15px 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.user view {
+  display: flex;
+  align-items: center;
+}
+
+.user .rank {
+  margin-right: 20px;
+  font-size: 1.2rem;
+  width: 30px;
+  text-align: right;
+}
+
+.user .avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;  
+}
+
+.user .nickname {
+  margin-left: 10px;
+}
+
+.user .loginDays {
+  color: #02BD00;
+  font-size: 1.2rem;
+}

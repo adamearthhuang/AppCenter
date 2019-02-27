@@ -1,0 +1,13 @@
+@import '../../libs/weui.wxss';
+
+page {
+  background-color: #f8f8f8;
+}
+
+.placeholder {
+  height: 20px;
+}
+
+.ad {
+  padding: 5px 15px 5px 15px;
+}

@@ -1,0 +1,19 @@
+<view>
+  <view class="placeholder"></view>
+
+  <view class="weui-cells weui-cells_after-title">
+    <view class="weui-cell weui-cell_input">
+      <view class="weui-cell__bd">
+        <input class="weui-input" type="digit" placeholder="0.00" focus="true" bindinput="onInputListener"/>
+      </view>
+    </view>
+
+    <view class="weui-cell" hidden="{{ hidden }}" bindtap="onOutputListener">
+      <view class="weui-cell__bd">
+        <text>{{ output }}</text>
+      </view>
+    </view>
+  </view>
+
+  <view class="weui-cells__tips">转换结果仅供参考，请务必进行多方验证。</view>
+</view>

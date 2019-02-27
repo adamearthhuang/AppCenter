@@ -1,0 +1,46 @@
+<view bindtouchend="onTouchEnd">
+  <official-account></official-account>
+
+  <view class="bar-login" hidden="{{ hasLogin }}">
+    <button hover-class="hover" open-type="getUserInfo" bindgetuserinfo="onGetUserInfo">微信登录</button>
+  </view>
+
+  <view class="bar-user" hidden="{{ !hasLogin }}" bindtap="onUserBarClickListener">
+    <view class="between">
+      <image class="avatar" src="{{ avatar }}"></image>
+      <view class="info">
+        <text class="nickname">{{ nickname }}</text>
+        <text class="tips">{{ tips }}</text>
+      </view>
+    </view>
+
+    <view class="between">
+      <text class="loginDays">{{ loginDays }}</text>
+    </view>
+  </view>
+
+  <view wx:for="{{ items }}" wx:for-item="item" wx:key="item">
+    <view class="title">
+      <text>{{ item.title }}</text>
+    </view>
+
+    <view class="grids">
+      <block wx:for="{{ item.grids }}" wx:for-item="grid" wx:key="grid">
+        <navigator wx:if="{{ grid.miniProgram}}" class="grid" target="miniProgram" app-id="{{ grid.appId }}" style="height:{{ gridHeight }};">
+          <image src="{{ grid.icon }}"></image>
+          <text>{{ grid.title }}</text> 
+        </navigator>
+
+        <navigator wx:else class="grid" url="{{ grid.url }}" style="height:{{ gridHeight }};">
+          <image src="{{ grid.icon }}"></image>
+          <text>{{ grid.title }}</text> 
+        </navigator>
+      </block>
+    </view>
+  </view>
+
+  <view class="weui-footer footer">
+    <view class="weui-footer__text">{{ userSum }}</view>
+  </view>
+</view>
+

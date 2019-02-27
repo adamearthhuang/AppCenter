@@ -1,0 +1,36 @@
+page {
+  background-color: #09082f;
+}
+
+.bg {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: -999;
+}
+
+.placeholder {
+  height: 20px;
+}
+
+.video {
+  padding: 10px 15px 10px 15px;
+}
+
+.name {
+  padding: 10px 15px 10px 15px;
+}
+
+.name text {
+  font-size: 1.4rem;
+  color: #4574EB;
+  font-weight: bold;
+  word-break: break-all;
+}
+
+.tip {
+  padding: 20px 15px 20px 15px;
+  color: rgba(69, 116, 235, 0.4);
+  font-size: 0.8rem;
+  word-break: break-all;
+}

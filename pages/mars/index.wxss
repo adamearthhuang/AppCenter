@@ -1,0 +1,14 @@
+@import '../../libs/weui.wxss';
+
+page {
+  background-color: #f8f8f8;
+}
+
+.placeholder {
+  height: 20px;
+}
+
+text {
+  color: #02BD00;
+  word-break: break-all;
+}

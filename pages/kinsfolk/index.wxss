@@ -1,0 +1,64 @@
+@import '../../libs/weui.wxss';
+
+page {
+  background-color: #f8f8f8;
+}
+
+.placeholder {
+  height: 20px;
+}
+
+.hint {
+  color: #999;
+  word-break: break-all;
+  font-size: 0.8rem;
+}
+
+.output {
+  color: #02BD00;
+  word-break: break-all;
+  display: block;
+  margin-top: 10px;
+}
+
+.grids {
+  display: flex;
+  flex-wrap: wrap;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  border-top: 1rpx solid #d9d9d9;
+  border-left: 1rpx solid #d9d9d9;
+}
+
+.grids .grid {
+  width: 33.333333%;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #FFF;
+  box-sizing: border-box;
+  border-right: 1rpx solid #d9d9d9;
+  border-bottom: 1rpx solid #d9d9d9;
+}
+
+.grids .grid2 {
+  width: 33.333333%;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #FAFAFB;
+  box-sizing: border-box;
+  border-right: 1rpx solid #d9d9d9;
+  border-bottom: 1rpx solid #d9d9d9;
+}
+
+.grids .hover {
+  background-color: #FAFAFB;
+}
+
+.grids .hover2 {
+  background-color: #FFF;
+}
