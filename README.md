@@ -1,2 +1,2 @@
-# app-center
+# app
 应用中心。
