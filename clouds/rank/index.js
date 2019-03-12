@@ -11,7 +11,8 @@ exports.main = async (event, context) => {
     let result = await db.collection('_user')
                           .orderBy('loginDays', 'desc')
                           .where({
-                            gender: db.command.gte(0)
+                            gender: db.command.gte(0),
+                            _id: db.command.neq('W8i1MN2AWotkmPt2')
                           })
                           .limit(100)
                           .get();
@@ -23,7 +24,6 @@ exports.main = async (event, context) => {
         nickname: result.data[i].nickname,
         loginDays: result.data[i].loginDays
       });
-      
     }
 
     return {
