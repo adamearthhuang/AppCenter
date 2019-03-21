@@ -1,2 +1,2 @@
 # app
-应用中心。
+Project of WeChat Mini Program.
