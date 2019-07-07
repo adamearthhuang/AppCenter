@@ -14,8 +14,8 @@ exports.main = async (event, context) => {
       code: 0,
       msg: 'success',
       data: {
-        userSum: result.data[0].userSum,
-        moneyEnable: result.data[0].moneyEnable
+        users: result.data[0].users,
+        enable: result.data[0].enable
       }
     };
 

@@ -22,7 +22,7 @@
   </view>
 
   <view class="weui-footer footer">
-    <view class="weui-footer__text">{{ userSum }}</view>
+    <view class="weui-footer__text">{{ users }}</view>
   </view>
 </view>
 

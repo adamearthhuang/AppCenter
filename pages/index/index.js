@@ -103,6 +103,27 @@ Page({
 
     this.requestInit();
   },
+  showAD: function () {
+    // 在页面中定义插屏广告
+    let interstitialAd = null;
+
+    // 在页面onLoad回调事件中创建插屏广告实例
+    if (wx.createInterstitialAd) {
+      interstitialAd = wx.createInterstitialAd({
+        adUnitId: 'adunit-68e171a71a23996a'
+      });
+      interstitialAd.onLoad(() => { });
+      interstitialAd.onError((err) => { });
+      interstitialAd.onClose(() => { });
+    }
+
+    // 在适合的场景显示插屏广告
+    if (interstitialAd) {
+      interstitialAd.show().catch((err) => {
+        console.error(err);
+      })
+    }
+  },
   onShareAppMessage: function () {
     return {
       title: '应用中心',
@@ -119,11 +140,13 @@ Page({
 
         // 累计用户
         $this.setData({
-          userSum: '累计用户 ' + res.result.data.userSum,
+          users: '累计用户 ' + res.result.data.users,
         });
 
-        // 红包
-        if (res.result.data.moneyEnable) {
+        // 是否可用
+        if (res.result.data.enable) {
+          $this.showAD();
+
           $this.setData({
             items: [
               {
