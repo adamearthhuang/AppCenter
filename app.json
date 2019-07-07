@@ -13,8 +13,7 @@
     "pages/video/index",
     "pages/location/index",
     "pages/random/index",
-    "pages/money/index",
-    "pages/rank/index"
+    "pages/money/index"
   ],
   "window": {
     "navigationBarTitleText": "应用中心",
