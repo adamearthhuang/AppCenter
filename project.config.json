@@ -40,14 +40,8 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 0,
-			"list": [
-				{
-					"id": -1,
-					"name": "rank",
-					"pathName": "pages/rank/index"
-				}
-			]
+			"current": -1,
+			"list": []
 		}
 	}
 }
