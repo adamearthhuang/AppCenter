@@ -2,10 +2,6 @@ var util = require('../../utils/util');
 
 Page({
   data: {
-    hasLogin: false,
-    scrollTop: 0,
-    loginBarHeight: 20 + 40,
-    userBarHeight: 20 + 50,
     items: [
       {
         title: '为你发现',
@@ -103,73 +99,15 @@ Page({
   onLoad: function () {
     this.setData({
       gridHeight: util.getScreenWidth() / 3 + 'px',
-      tips: getTips()
     });
 
     this.requestInit();
-    
-    this.login();
   },
   onShareAppMessage: function () {
     return {
       title: '应用中心',
       path: '/pages/index/index'
     };
-  },
-  onGetUserInfo: function (e) {
-    var userInfo = e.detail.userInfo;
-    this.requestLogin(userInfo.nickName, userInfo.avatarUrl, userInfo.gender, userInfo.city, userInfo.province, userInfo.country, userInfo.language);
-
-    this.setData({
-      hasLogin: true,
-      avatar: userInfo.avatarUrl,
-      nickname: userInfo.nickName
-    });
-  }, 
-  onUserBarClickListener: function () {
-    wx.navigateTo({
-      url: '../rank/index',
-    });
-  },
-  login: function () {
-    var $this = this;
-
-    wx.getSetting({
-      success: function (res) {
-        if (res.authSetting['scope.userInfo']) {
-          wx.getUserInfo({
-            success: function (res) {
-              var userInfo = res.userInfo;
-              $this.requestLogin(userInfo.nickName, userInfo.avatarUrl, userInfo.gender, userInfo.city, userInfo.province, userInfo.country, userInfo.language);
-
-              $this.setData({
-                hasLogin: true,
-                avatar: userInfo.avatarUrl,
-                nickname: userInfo.nickName
-              });
-            }
-          });
-        }
-      }
-    });
-  },
-  onPageScroll: function (e) {
-    this.setData({
-      scrollTop: e.scrollTop
-    });
-  },
-  onTouchEnd: function () {
-    var barHeight = this.data.hasLogin ? this.data.userBarHeight : this.data.loginBarHeight;
-
-    if (this.data.scrollTop <= barHeight / 2) {
-      wx.pageScrollTo({
-        scrollTop: 0,
-      });
-    } else if (this.data.scrollTop <= barHeight) {
-      wx.pageScrollTo({
-        scrollTop: barHeight,
-      });
-    }
   },
   requestInit: function () {
     var $this = this;
@@ -206,47 +144,4 @@ Page({
       }
     });
   },
-  requestLogin: function (nickname, avatar, gender, city, province, country, language) {
-    var $this = this;
-
-    wx.cloud.callFunction({
-      name: 'login',
-      data: {
-        nickname: nickname,
-        avatar: avatar,
-        gender: gender,
-        city: city,
-        province: province,
-        country: country,
-        language: language
-      },
-      success: function (res) {
-        console.log('login', res.result);
-
-        $this.setData({
-          loginDays: '已使用 ' + res.result.data.loginDays + ' 天',
-        });
-      }
-    });
-  }
 });
-
-function getTips() {
-  var hour = new Date().getHours();
-  
-  if (hour >= 6 && hour <= 9) {           // 早上
-    return '一日之计在于晨。'; 
-  } else if (hour >= 10 && hour <= 11) {  // 上午
-    return '面朝大海，春暖花开。';
-  } else if (hour >= 12 && hour <= 13) {  // 中午
-    return '午安，我的朋友。';
-  } else if (hour >= 14 && hour <= 16) {  // 下午
-    return '滴水穿石，非一日之功。';
-  } else if (hour >= 17 && hour <= 18) {  // 傍晚
-    return '出去走走，看看世界。';
-  } else if (hour >= 19 && hour <= 23) {  // 晚上
-    return '结束一天的忙碌，回归生活。';
-  } else if (hour >= 0 && hour <= 5) {    // 深夜
-    return '还不去睡觉？';
-  }
-}

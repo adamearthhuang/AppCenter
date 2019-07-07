@@ -4,7 +4,7 @@
   <view class="placeholder"></view>
 
   <view class="video" bindtap="onOutputListener">
-    <tencent-video vid="{{ vid }}" autoplay="{{ true }}"></tencent-video>
+    <tencent-video vid="{{ vid }}" autoplay="{{ true }}" playerid="{{ vid }}"></tencent-video>
   </view>
 
   <view class="name" bindtap="onNameListener">

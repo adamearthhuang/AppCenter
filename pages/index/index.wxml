@@ -1,23 +1,5 @@
-<view bindtouchend="onTouchEnd">
+<view>
   <official-account></official-account>
-
-  <view class="bar-login" hidden="{{ hasLogin }}">
-    <button hover-class="hover" open-type="getUserInfo" bindgetuserinfo="onGetUserInfo">微信登录</button>
-  </view>
-
-  <view class="bar-user" hidden="{{ !hasLogin }}" bindtap="onUserBarClickListener">
-    <view class="between">
-      <image class="avatar" src="{{ avatar }}"></image>
-      <view class="info">
-        <text class="nickname">{{ nickname }}</text>
-        <text class="tips">{{ tips }}</text>
-      </view>
-    </view>
-
-    <view class="between">
-      <text class="loginDays">{{ loginDays }}</text>
-    </view>
-  </view>
 
   <view wx:for="{{ items }}" wx:for-item="item" wx:key="item">
     <view class="title">

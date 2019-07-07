@@ -28,6 +28,6 @@
   </view>
 
   <view class="weui-btn-area">
-    <button class="weui-btn" type="primary" hidden="{{ hidden }}" bindtap="onNextListener">猜一猜</button>
+    <button class="weui-btn" type="primary" hidden="{{ hidden }}" bindtap="onNextListener">换一换</button>
   </view>
 </view>
