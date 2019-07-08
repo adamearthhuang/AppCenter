@@ -156,12 +156,6 @@ Page({
             ]
           });
 
-          $this.data.items[1].grids.splice(1, 1, {
-            title: '每周电影',
-            url: '../video/index',
-            icon: '../../resources/index/video.png'
-          });
-
           $this.setData({
             items: $this.data.items
           });

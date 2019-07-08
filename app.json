@@ -10,7 +10,6 @@
     "pages/kinsfolk/index",
     "pages/challenge/index",
     "pages/undercover/index",
-    "pages/video/index",
     "pages/location/index",
     "pages/random/index",
     "pages/money/index"
@@ -24,11 +23,5 @@
   "navigateToMiniProgramAppIdList": [
     "wx7c8d593b2c3a7703"
   ],
-  "plugins": {
-    "tencent-video": {
-      "version": "1.3.6",
-      "provider": "wxa75efa648b60994b"
-    }
-  },
   "sitemapLocation": "sitemap.json"
 }
