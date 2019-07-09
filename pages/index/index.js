@@ -4,18 +4,6 @@ Page({
   data: {
     items: [
       {
-        title: '为你发现',
-        grids: [
-          {
-            title: '今日推荐',
-            url: '../advertisement/index',
-            icon: '../../resources/index/advertisement.png'
-          },
-          { },
-          { },
-        ]
-      },
-      {
         title: '便民生活',
         grids: [
           {
@@ -154,6 +142,19 @@ Page({
               {},
               {}
             ]
+          });
+
+          $this.data.items.splice(1, 0, {
+            title: '为你发现',
+              grids: [
+                {
+                  title: '今日推荐',
+                  url: '../advertisement/index',
+                  icon: '../../resources/index/advertisement.png'
+                },
+                {},
+                {},
+              ]
           });
 
           $this.setData({
