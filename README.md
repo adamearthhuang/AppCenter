@@ -1,2 +1,2 @@
 # app
-Project of WeChat Mini Program.
+WeChat Mini Program for including some common apps.
