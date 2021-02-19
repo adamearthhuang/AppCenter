@@ -12,13 +12,14 @@
     "pages/undercover/index",
     "pages/location/index",
     "pages/random/index",
-    "pages/money/index"
+    "pages/money/index",
+    "pages/quote/index"
   ],
   "window": {
     "navigationBarTitleText": "应用中心",
     "navigationBarTextStyle": "black",
-    "navigationBarBackgroundColor": "#f8f8f8",
-    "backgroundColor": "#f8f8f8"
+    "navigationBarBackgroundColor": "#ecedee",
+    "backgroundColor": "#ecedee"
   },
   "navigateToMiniProgramAppIdList": [
     "wx7c8d593b2c3a7703"

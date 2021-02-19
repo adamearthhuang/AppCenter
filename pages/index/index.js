@@ -82,7 +82,7 @@ Page({
   },
   onLoad: function () {
     this.setData({
-      gridHeight: util.getScreenWidth() / 3 + 'px',
+      gridHeight: (util.getScreenWidth() - 20) / 3 + 'px',
     });
 
     this.requestInit();
@@ -152,7 +152,11 @@ Page({
                   url: '../advertisement/index',
                   icon: '../../resources/index/advertisement.png'
                 },
-                {},
+                {
+                  title: '股神专属',
+                  url: '../quote/index',
+                  icon: '../../resources/index/quote.png'
+                },
                 {},
               ]
           });

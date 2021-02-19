@@ -1,0 +1,9 @@
+<view>
+  <view class="placeholder"></view>
+
+  <view class="img">
+    <image src="../../resources/quote/quote.png" style="width:{{ width }}px; height:{{ height }}px;"></image>
+  </view>
+
+  <view class="weui-cells__tips">我是行情精灵，快来微信公众号关注领取我吧，我将会成为你的投资好伙伴，机构和私募主力都在使用。</view>
+</view>

@@ -1,7 +1,7 @@
 <view>
   <official-account></official-account>
 
-  <view wx:for="{{ items }}" wx:for-item="item" wx:key="item">
+  <view class="block" wx:for="{{ items }}" wx:for-item="item" wx:key="item">
     <view class="title">
       <text>{{ item.title }}</text>
     </view>
