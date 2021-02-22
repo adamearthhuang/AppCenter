@@ -139,11 +139,7 @@ Page({
                 url: '../money/index',
                 icon: '../../resources/index/money.png'
               },
-              {
-                title: '微信公众号',
-                url: '../weixin/index',
-                icon: '../../resources/index/weixin.png'
-              },
+              {},
               {}
             ]
           });
@@ -152,11 +148,15 @@ Page({
             title: '为你发现',
               grids: [
                 {
-                  title: '今日推荐',
+                  title: '推荐',
                   url: '../advertisement/index',
                   icon: '../../resources/index/advertisement.png'
                 },
-                {},
+                {
+                  title: '严选',
+                  url: '../vip/index',
+                  icon: '../../resources/index/vip.png'
+                },
                 {},
               ]
           });

@@ -8,6 +8,7 @@ Page({
       name: 'init',
       success: function (res) {
         console.log('init', res.result);
+        
         $this.setData({
           url: res.result.data.url
         });
@@ -16,8 +17,8 @@ Page({
   },
   onShareAppMessage: function () {
     return {
-      title: '微信公众号',
-      path: '/pages/weixin/index'
+      title: '严选',
+      path: '/pages/vip/index'
     };
   }
 });

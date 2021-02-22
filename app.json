@@ -13,7 +13,7 @@
     "pages/location/index",
     "pages/random/index",
     "pages/money/index",
-    "pages/weixin/index"
+    "pages/vip/index"
   ],
   "window": {
     "navigationBarTitleText": "应用中心",

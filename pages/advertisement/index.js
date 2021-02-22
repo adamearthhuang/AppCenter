@@ -6,7 +6,7 @@ Page({
   },
   onShareAppMessage: function () {
     return {
-      title: '今日推荐',
+      title: '推荐',
       path: '/pages/advertisement/index'
     };
   }
