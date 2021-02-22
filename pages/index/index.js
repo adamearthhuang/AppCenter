@@ -139,7 +139,11 @@ Page({
                 url: '../money/index',
                 icon: '../../resources/index/money.png'
               },
-              {},
+              {
+                title: '微信公众号',
+                url: '../weixin/index',
+                icon: '../../resources/index/weixin.png'
+              },
               {}
             ]
           });
@@ -152,11 +156,7 @@ Page({
                   url: '../advertisement/index',
                   icon: '../../resources/index/advertisement.png'
                 },
-                {
-                  title: '股神专属',
-                  url: '../quote/index',
-                  icon: '../../resources/index/quote.png'
-                },
+                {},
                 {},
               ]
           });

@@ -11,20 +11,15 @@ exports.main = async (event, context) => {
     let result = await db.collection('_').get();
 
     return {
-      code: 0,
-      msg: 'success',
-      data: {
-        users: result.data[0].users,
-        enable: result.data[0].enable
-      }
+      ret: 0,
+      data: result.data[0]
     };
 
   } catch (e) {
     console.error(e);
 
     return {
-      code: 1,
-      msg: 'failure'
+      ret: -1
     };
   }
 };
