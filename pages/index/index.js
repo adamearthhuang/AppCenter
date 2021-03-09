@@ -153,9 +153,9 @@ Page({
                   icon: '../../resources/index/advertisement.png'
                 },
                 {
-                  title: '严选',
-                  url: '../vip/index',
-                  icon: '../../resources/index/vip.png'
+                  title: res.result.data.wx_title,
+                  url: '../wx/index?url=' + res.result.data.wx_url + "&title=" + res.result.data.wx_title,
+                  icon: '../../resources/index/wx.png'
                 },
                 {},
               ]
